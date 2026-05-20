@@ -1,0 +1,6 @@
+cdsapi
+requests
+pandas
+python-dotenv
+pyarrow
+copernicusmarine
