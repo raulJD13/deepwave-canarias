@@ -1,6 +1,5 @@
-cdsapi
-requests
-pandas
-python-dotenv
-pyarrow
-copernicusmarine
+fastapi
+uvicorn[standard]
+pydantic
+pytest
+httpx
