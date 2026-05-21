@@ -1,8 +1,6 @@
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 .venv/
 venv/
 env/
@@ -11,8 +9,18 @@ env/
 # Mac
 .DS_Store
 
-# Datos pesados
+# Secretos / entorno
+.env
+.env.*
+secrets/
+credentials/
+token*.json
+*.key
+*.pem
+
+# Datos y modelos pesados
 data/
+bronze/
 silver/
 gold/
 models/
@@ -26,21 +34,19 @@ models/
 *.hdf5
 *.pkl
 *.joblib
-*.csv
 *.zip
 *.tar
 *.gz
+*.7z
 
-# Logs
+# CSV grandes por defecto
+*.csv
+!reports/**/*.csv
+!docs/**/*.csv
+
+# Logs y temporales
 logs/
 *.log
-
-# Entornos
-.env
-.env.local
-
-# Jupyter
-*/.ipynb_checkpoints/
-
-.gold
-.models
+tmp/
+temp/
+cache/

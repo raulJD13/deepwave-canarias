@@ -1,0 +1,4 @@
+block,notebook,main_output,models_or_entries,details,status
+physical_multitarget,15_model_training_multitarget_physical.ipynb,/Users/rauljimenez/Development/Projects/AI-Projects/deep-wave-canarias/gold/model_results/multitarget_physical,80,"scalar_entries=60, direction_entries=20",OK
+risk_modules,16_model_training_risk_modules.ipynb,/Users/rauljimenez/Development/Projects/AI-Projects/deep-wave-canarias/gold/model_results/risk_modules,15,"{""LightGBMClassifier"": 15}",OK
+surf_score,17_model_surf_score.ipynb,/Users/rauljimenez/Development/Projects/AI-Projects/deep-wave-canarias/gold/model_results/surf_score,5,DirectLGBMSurfScore entries,OK

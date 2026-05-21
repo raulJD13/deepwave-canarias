@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+
+# Datos pesados
+data/
+silver/
+gold/
+models/
+
+# Archivos pesados
+*.parquet
+*.nc
+*.grib
+*.grib2
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.csv
+*.zip
+*.tar
+*.gz
+
+# Logs
+logs/
+*.log
+
+# Entornos
+.env
+.env.local
+
+# Jupyter
+*/.ipynb_checkpoints/
+
+.gold
+.models

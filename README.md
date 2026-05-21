@@ -4,42 +4,83 @@ Sistema predictivo de oleaje, viento, marea y riesgo marítimo para zonas coster
 
 ## Objetivo
 
-DeepWave Canarias tiene como objetivo predecir el estado marítimo futuro en zonas costeras de Canarias, incluyendo altura significativa de ola, periodo, dirección del oleaje, viento, marea y niveles de riesgo para playa, navegación ligera y actividades deportivas.
+DeepWave Canarias anticipa el estado marítimo futuro en zonas costeras de Canarias y transforma predicciones físicas en información operativa para baño, surf, navegación ligera y seguridad costera.
 
-## Pipeline de datos
+Horizontes de predicción:
 
-El proyecto sigue una arquitectura tipo medallion:
+```text
++3h, +6h, +12h, +24h y +48h
+```
 
-- Bronze: datos originales descargados desde fuentes abiertas.
-- Silver: datos limpios, normalizados y alineados temporalmente.
-- Gold: datasets finales para entrenamiento de modelos.
-- Gold multitarget: dataset ampliado para predicción física multivariable y módulos de riesgo.
+## Qué predice
 
-## Modelos entrenados
+Variables físicas principales:
 
-Actualmente se han entrenado:
+- altura significativa de ola (`hs`)
+- periodo medio (`tm02`)
+- swell height / swell period
+- dirección de ola
+- velocidad y dirección del viento
+- nivel del mar y rango mareal
 
-- LightGBMRegressor para predicción de altura significativa de ola.
-- XGBClassifier para riesgo marítimo general.
-- TCN como modelo profundo experimental.
-- LightGBM multitarget físico para oleaje, periodo, dirección, viento y marea.
-- Módulos de riesgo para playa y navegación en desarrollo.
+Módulos derivados:
 
-## Tecnologías
+- riesgo general marítimo
+- riesgo para playa/bañistas
+- riesgo para navegación ligera
+- surf score de 0 a 10 y categoría de calidad
 
-- Python
-- pandas
-- pyarrow / Parquet
-- scikit-learn
-- LightGBM
-- XGBoost
-- Jupyter Notebook
-- Google Drive / entorno local Mac M2 Pro
+## Arquitectura de datos
 
-## Estado del proyecto
+```text
+Bronze → Silver → Gold → Gold multitarget
+```
 
-- Limpieza Silver: completada.
-- Gold training dataset: completado.
-- Gold multitarget dataset: completado.
-- Modelos físicos multitarget: completados.
-- Modelos de riesgo: en entrenamiento.
+## Arquitectura final de modelado
+
+```text
+Predicción física con LightGBM
+→ riesgo interpretable
+→ surf score interpretable
+```
+
+## Resultados destacados
+
+Ejemplos para `hs`:
+
+- MAE +24h: `0.3159` m
+- MAE +48h: `0.4432` m
+
+## Estructura del repositorio
+
+```text
+deep-wave-canarias/
+├── notebooks/
+├── docs/
+├── reports/
+│   ├── figures/
+│   ├── tables/
+│   └── model_summaries/
+├── requirements.txt
+├── requirements-mac-m2pro.txt
+├── README.md
+└── .gitignore
+```
+
+## Importante
+
+No se suben a GitHub datos pesados ni modelos:
+
+```text
+data/
+silver/
+gold/
+models/
+```
+
+## Limitaciones
+
+- Las etiquetas de riesgo y surf son derivadas mediante reglas físicas.
+- No se dispone de etiquetas oficiales de incidentes, banderas o valoraciones reales de surfistas.
+- El horizonte +48h tiene mayor incertidumbre.
+- El sistema es complementario y no sustituye avisos oficiales.

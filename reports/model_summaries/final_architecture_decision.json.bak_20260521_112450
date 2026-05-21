@@ -1,0 +1,167 @@
+{
+  "physical_forecast": {
+    "main_model_family": "LightGBMRegressor per target and horizon",
+    "main_targets": [
+      "hs",
+      "tm02",
+      "swell_height",
+      "swell_period",
+      "wave_direction",
+      "wind_speed",
+      "wind_direction",
+      "sea_level",
+      "daily_tidal_range"
+    ],
+    "secondary_targets": [
+      "tp",
+      "swell_direction",
+      "wind_wave_height"
+    ],
+    "not_priority_targets": [
+      "sea_surface_salinity",
+      "current_speed",
+      "sea_surface_temperature"
+    ],
+    "direction_handling": "sin/cos components reconstructed to degrees"
+  },
+  "risk_modules": [
+    {
+      "module": "risk_beach",
+      "horizon_hours": 3,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_beach",
+      "horizon_hours": 6,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_beach",
+      "horizon_hours": 12,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_beach",
+      "horizon_hours": 24,
+      "selected_method": "PersistenceRisk",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_beach",
+      "horizon_hours": 48,
+      "selected_method": "PersistenceRisk",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_general",
+      "horizon_hours": 3,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_general",
+      "horizon_hours": 6,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_general",
+      "horizon_hours": 12,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_general",
+      "horizon_hours": 24,
+      "selected_method": "PersistenceRisk",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_general",
+      "horizon_hours": 48,
+      "selected_method": "PersistenceRisk",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_navigation",
+      "horizon_hours": 3,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_navigation",
+      "horizon_hours": 6,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_navigation",
+      "horizon_hours": 12,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_navigation",
+      "horizon_hours": 24,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    },
+    {
+      "module": "risk_navigation",
+      "horizon_hours": 48,
+      "selected_method": "PhysicalDerivedRisk_LGBMPhysical",
+      "reason": "best_security_score_from_notebook_16"
+    }
+  ],
+  "surf_module": [
+    {
+      "module": "surf_score",
+      "horizon_hours": 3,
+      "selected_method": "PhysicalDerivedSurfScore",
+      "notebook_recommended_model": "CurrentConditionsSurfScore",
+      "reason": "interpretable_and_consistent_with_physical_forecast"
+    },
+    {
+      "module": "surf_score",
+      "horizon_hours": 6,
+      "selected_method": "PhysicalDerivedSurfScore",
+      "notebook_recommended_model": "DirectLGBMSurfScore",
+      "reason": "interpretable_and_consistent_with_physical_forecast"
+    },
+    {
+      "module": "surf_score",
+      "horizon_hours": 12,
+      "selected_method": "PhysicalDerivedSurfScore",
+      "notebook_recommended_model": "PhysicalDerivedSurfScore",
+      "reason": "interpretable_and_consistent_with_physical_forecast"
+    },
+    {
+      "module": "surf_score",
+      "horizon_hours": 24,
+      "selected_method": "PhysicalDerivedSurfScore",
+      "notebook_recommended_model": "PhysicalDerivedSurfScore",
+      "reason": "interpretable_and_consistent_with_physical_forecast"
+    },
+    {
+      "module": "surf_score",
+      "horizon_hours": 48,
+      "selected_method": "PhysicalDerivedSurfScore",
+      "notebook_recommended_model": "PhysicalDerivedSurfScore",
+      "reason": "interpretable_and_consistent_with_physical_forecast"
+    }
+  ],
+  "final_system_logic": [
+    "Predict physical maritime variables with LightGBM models.",
+    "Derive risk_general, risk_beach and risk_navigation using interpretable physical rules.",
+    "Compute surf_score from predicted physical variables using an interpretable physical scoring function.",
+    "Use direct classifiers/regressors as experimental comparisons, not as primary final modules when interpretability is critical."
+  ],
+  "limitations": [
+    "Risk and surf labels are derived from physical rules, not from official incident or lifeguard datasets.",
+    "Predictions at +48h have higher uncertainty.",
+    "Zona_id is used as a feature, so extrapolation to completely unseen zones should be handled carefully."
+  ]
+}
