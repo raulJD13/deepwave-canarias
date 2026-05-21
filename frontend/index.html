@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DeepWave Canarias Ocean Command Center</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main id="app" class="app-shell is-loading">
+      <section id="scene-root" class="scene-root" aria-label="Escena oceanografica 3D"></section>
+
+      <header class="topbar">
+        <div class="brand-block">
+          <p class="eyebrow">Maritime Intelligence Dashboard</p>
+          <h1>DeepWave Canarias Ocean Command Center</h1>
+          <div class="system-chips" aria-label="Estado tecnico del sistema">
+            <span class="tech-chip">FastAPI 8000</span>
+            <span class="tech-chip" id="chip-horizon">+24h</span>
+            <span class="tech-chip" id="chip-zone">Canarias</span>
+          </div>
+        </div>
+        <div class="ops-cluster">
+          <div class="ops-clock">
+            <span>Hora local</span>
+            <strong id="current-time">--:--</strong>
+          </div>
+          <div class="ops-mode">
+            <span>Modo</span>
+            <strong>Forecast demo</strong>
+          </div>
+          <div class="status-pill" id="api-status">
+            <span class="status-dot"></span>
+            <span id="api-status-label">Conectando API</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="scene-hud" aria-label="Capas oceanograficas activas">
+        <p class="eyebrow">Capas activas</p>
+        <div class="layer-list">
+          <span><i class="layer-dot wave"></i> Oleaje / swell</span>
+          <span><i class="layer-dot wind"></i> Viento</span>
+          <span><i class="layer-dot risk"></i> Riesgo costero</span>
+        </div>
+      </section>
+
+      <aside class="command-panel" aria-live="polite">
+        <div class="panel-section selected-zone">
+          <p class="eyebrow">Zona seleccionada</p>
+          <h2 id="zone-name">Cargando zonas</h2>
+          <p id="zone-meta" class="muted">Esperando datos de FastAPI</p>
+          <label class="zone-picker">
+            <span>Cambiar zona</span>
+            <select id="zone-select" aria-label="Seleccionar zona costera"></select>
+          </label>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric-card">
+            <span>Altura ola</span>
+            <strong id="metric-hs">--</strong>
+          </article>
+          <article class="metric-card">
+            <span>Periodo</span>
+            <strong id="metric-period">--</strong>
+          </article>
+          <article class="metric-card">
+            <span>Viento</span>
+            <strong id="metric-wind">--</strong>
+          </article>
+          <article class="metric-card">
+            <span>Surf score</span>
+            <strong id="metric-surf">--</strong>
+          </article>
+        </div>
+
+        <div class="risk-stack">
+          <div class="risk-row">
+            <span>Riesgo general</span>
+            <strong id="risk-general">--</strong>
+          </div>
+          <div class="risk-row">
+            <span>Riesgo playa</span>
+            <strong id="risk-beach">--</strong>
+          </div>
+          <div class="risk-row">
+            <span>Riesgo navegacion</span>
+            <strong id="risk-navigation">--</strong>
+          </div>
+        </div>
+
+        <div class="recommendation-box">
+          <p class="eyebrow">Recomendacion operativa</p>
+          <p id="recommendation">Cargando recomendacion prevista.</p>
+        </div>
+
+        <div class="legend-block">
+          <p class="eyebrow">Leyenda riesgo</p>
+          <div id="risk-legend" class="legend-list"></div>
+        </div>
+
+        <div class="legend-block">
+          <p class="eyebrow">Leyenda surf</p>
+          <div id="surf-legend" class="legend-list"></div>
+        </div>
+      </aside>
+
+      <nav class="timeline-shell" aria-label="Selector de horizonte">
+        <div id="timeline" class="timeline"></div>
+      </nav>
+
+      <section id="loading-state" class="state-overlay">
+        <div class="loader-orbit"></div>
+        <strong>Sincronizando centro de control maritimo</strong>
+        <span>Cargando zonas, riesgos y surf score.</span>
+      </section>
+
+      <section id="error-state" class="error-toast" hidden>
+        <strong>API no disponible</strong>
+        <span id="error-message">Comprueba que FastAPI esta activo en http://127.0.0.1:8000.</span>
+      </section>
+
+      <footer class="safety-note">
+        Herramienta complementaria. No sustituye avisos oficiales maritimos, meteorologicos, de socorrismo o emergencias.
+      </footer>
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

@@ -326,7 +326,7 @@ Work in this order unless the user says otherwise:
 5. Add robust endpoint errors for unknown zone/horizon.
 6. Add tests for the API.
 7. Build frontend dashboard with vanilla HTML/CSS/JS.
-8. Add Leaflet map and Chart.js graphs.
+8. Add the Three.js Ocean Command Center scene and command-panel visualizations.
 9. Add Docker and run scripts.
 10. Add minimal API performance checks.
 
@@ -455,54 +455,64 @@ uvicorn src.api.main:app --reload --host 127.0.0.1 --port 8000
 
 ## 9. Frontend requirements
 
+## Frontend 3D production client
+
+The production frontend for DeepWave Canarias should be a lightweight but premium 3D web application.
+
 Use:
 
-```text
-HTML
-CSS
-JavaScript vanilla
-Leaflet.js
-Chart.js
-```
+- HTML
+- CSS
+- JavaScript vanilla ES modules
+- Three.js
+- No React
+- No Vue
+- No heavy frontend framework
 
-Recommended frontend structure:
+The frontend must consume the FastAPI backend and must not use hardcoded predictions except as a temporary fallback.
 
-```text
-frontend/
-├── index.html
-├── styles.css
-└── app.js
-```
+Main visual concept:
 
-Minimum dashboard features:
+DeepWave Canarias Ocean Command Center / Maritime Intelligence Dashboard
 
-- API status indicator
-- selector for zone
-- selector for horizon
-- cards for `hs`, period, wind, risk and surf score
-- recommendation text
-- forecast table by horizon
-- chart for wave height by horizon
-- chart for wind speed by horizon
+Core experience:
 
-High-value features:
+- animated Atlantic ocean surface
+- stylized 3D Canary Islands map with low volcanic relief
+- discreet coastal buoys/beacons for monitored zones
+- oceanographic overlays for swell, wind and risk
+- localized sea spray/foam around selected risk zones
+- selected-zone prediction panel
+- horizon timeline: +3h, +6h, +12h, +24h, +48h
+- compact operations header with API status, local time and mode
+- responsive command-center UI
+- graceful fallback if WebGL fails
 
-- Leaflet map centered on Canary Islands
-- markers colored by risk level
-- click marker → load zone forecast
-- chart of `hs` and `wind_speed`
-- risk legend
-- surf legend
-- responsive layout for presentation/demo
+Data mapping:
 
-Map default:
+- hs controls wave amplitude
+- period controls wave frequency/length
+- wind_speed controls turbulence
+- wave_direction/swell_direction controls swell bands
+- wind_direction controls wind vectors
+- risk level controls beacon color, halo intensity and localized spray/foam
+- surf_score controls the surf score metric in the selected-zone panel
 
-```text
-center: Canary Islands
-zoom: around 7
-```
+The frontend must keep the maritime safety disclaimer visible:
 
-Do not use React/Vite unless the user explicitly asks. The MVP should stay simple and easy to run.
+DeepWave Canarias is a complementary decision-support tool and does not replace official warnings.
+
+Do not build an overcomplex game engine. Prioritize a stable, impressive MVP:
+
+1. Three.js scene starts without errors.
+2. Ocean shader animates.
+3. Stylized Canary Islands are visible.
+4. Zones appear as discreet coastal beacons.
+5. Clicking a zone updates the side panel.
+6. Horizon selector updates scene and data.
+7. Oceanographic layers represent swell, wind and risk.
+8. API loading and error states are handled.
+9. The UI is usable in a live demo.
 
 ---
 
@@ -591,7 +601,7 @@ pytest
 httpx
 ```
 
-Frontend dependencies should use CDN links for Leaflet and Chart.js, unless the user requests bundling.
+Frontend dependencies should use CDN links for Three.js ES modules. Do not introduce React, Vue, Vite or heavy frontend frameworks unless explicitly requested.
 
 Data/model dependencies like LightGBM, XGBoost, PyArrow and pandas are needed for notebooks, but the production API should not require all heavy ML libraries unless inference is later added.
 
@@ -786,15 +796,15 @@ Create:
 ```text
 frontend/index.html
 frontend/styles.css
-frontend/app.js
+frontend/js/*.js
 ```
 
 Use:
 
 ```text
-Leaflet for map
-Chart.js for graphs
-FastAPI endpoints for data
+Three.js for the 3D ocean command center
+vanilla ES modules for state, API, UI and scene layers
+FastAPI endpoints for real production data
 ```
 
 ### Phase E — Docker/run scripts
@@ -835,7 +845,7 @@ The production phase is considered successful when:
 - `/risk/{zona_id}` returns risk modules
 - `/surf/{zona_id}` returns surf score
 - frontend loads in browser
-- frontend shows map/cards/charts
+- frontend shows the Ocean Command Center scene, command panel, horizon timeline and real API data
 - Docker starts the backend
 - tests pass with `pytest -q`
 - no heavy data/model files are committed
