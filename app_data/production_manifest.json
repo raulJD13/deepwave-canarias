@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-05-21T10:53:24.693594+00:00",
+  "base_dir": "/Users/rauljimenez/Development/Projects/AI-Projects/deep-wave-canarias",
+  "app_data_dir": "app_data",
+  "files": [
+    {
+      "file": "api_contract.json",
+      "relative_path": "app_data/api_contract.json",
+      "size_kb": 2.51,
+      "modified": "2026-05-21T11:53:24"
+    },
+    {
+      "file": "demo_examples.json",
+      "relative_path": "app_data/demo_examples.json",
+      "size_kb": 8.17,
+      "modified": "2026-05-21T11:53:24"
+    },
+    {
+      "file": "forecast_by_zone.json",
+      "relative_path": "app_data/forecast_by_zone.json",
+      "size_kb": 144.11,
+      "modified": "2026-05-21T11:53:24"
+    },
+    {
+      "file": "frontend_config.json",
+      "relative_path": "app_data/frontend_config.json",
+      "size_kb": 0.48,
+      "modified": "2026-05-21T11:53:24"
+    },
+    {
+      "file": "latest_predictions.json",
+      "relative_path": "app_data/latest_predictions.json",
+      "size_kb": 32.63,
+      "modified": "2026-05-21T11:53:24"
+    },
+    {
+      "file": "model_summary.json",
+      "relative_path": "app_data/model_summary.json",
+      "size_kb": 1.31,
+      "modified": "2026-05-21T11:53:24"
+    },
+    {
+      "file": "predictions_flat.json",
+      "relative_path": "app_data/predictions_flat.json",
+      "size_kb": 119.1,
+      "modified": "2026-05-21T11:53:24"
+    },
+    {
+      "file": "production_readiness_report.md",
+      "relative_path": "app_data/production_readiness_report.md",
+      "size_kb": 2.16,
+      "modified": "2026-05-21T11:53:24"
+    },
+    {
+      "file": "risk_legend.json",
+      "relative_path": "app_data/risk_legend.json",
+      "size_kb": 0.94,
+      "modified": "2026-05-21T11:53:24"
+    },
+    {
+      "file": "surf_legend.json",
+      "relative_path": "app_data/surf_legend.json",
+      "size_kb": 0.83,
+      "modified": "2026-05-21T11:53:24"
+    },
+    {
+      "file": "zones.json",
+      "relative_path": "app_data/zones.json",
+      "size_kb": 6.29,
+      "modified": "2026-05-21T11:53:24"
+    }
+  ],
+  "quality_checks": {
+    "zones_count": 14,
+    "forecast_zones_count": 14,
+    "flat_predictions_count": 70,
+    "latest_predictions_count": 14,
+    "selected_split": "test",
+    "selected_targets": [
+      "hs",
+      "tp",
+      "wave_direction",
+      "wind_speed",
+      "wind_direction"
+    ]
+  }
+}

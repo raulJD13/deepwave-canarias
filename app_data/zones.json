@@ -1,0 +1,230 @@
+{
+  "generated_at": "2026-05-21T10:53:24.668086+00:00",
+  "count": 14,
+  "zones": [
+    {
+      "zona_id": "CAN_EH_PUERTO_DE_LA_ESTACA",
+      "name": "Puerto de la Estaca",
+      "isla": "El Hierro",
+      "latitude": 27.7837,
+      "longitude": -17.9045,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 270.0,
+      "coast_exposure_score": 0.4,
+      "metadata": {
+        "municipio": "Valverde",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_FV_GRAN_TARAJAL",
+      "name": "Gran Tarajal",
+      "isla": "Fuerteventura",
+      "latitude": 28.2113,
+      "longitude": -14.0195,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 45.0,
+      "coast_exposure_score": 0.8,
+      "metadata": {
+        "municipio": "Tuineje",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_FV_PLAYA_DEL_VALLE",
+      "name": "Playa del Valle",
+      "isla": "Fuerteventura",
+      "latitude": 28.4854,
+      "longitude": -14.0943,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 45.0,
+      "coast_exposure_score": 0.8,
+      "metadata": {
+        "municipio": "Betancuria",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_GC_SAN_CRISTOBAL",
+      "name": "San Cristóbal",
+      "isla": "Gran Canaria",
+      "latitude": 28.0771,
+      "longitude": -15.4145,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 90.0,
+      "coast_exposure_score": 0.4,
+      "metadata": {
+        "municipio": "Las Palmas de Gran Canaria",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_LG_ERESES",
+      "name": "Ereses",
+      "isla": "La Gomera",
+      "latitude": 28.0246,
+      "longitude": -17.235,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 270.0,
+      "coast_exposure_score": 0.4,
+      "metadata": {
+        "municipio": "Alajeró",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_LP_CALLEJONCITOS",
+      "name": "Callejoncitos",
+      "isla": "La Palma",
+      "latitude": 28.8148,
+      "longitude": -17.9717,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 315.0,
+      "coast_exposure_score": 0.8,
+      "metadata": {
+        "municipio": "Garafía",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_LP_EL_CHARCON",
+      "name": "El Charcón",
+      "isla": "La Palma",
+      "latitude": 28.6015,
+      "longitude": -17.9236,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 315.0,
+      "coast_exposure_score": 0.8,
+      "metadata": {
+        "municipio": "Tazacorte",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_LZ_ISLA_DE_LA_ALEGRANZA",
+      "name": "Isla de la Alegranza",
+      "isla": "Alegranza",
+      "latitude": 29.3858,
+      "longitude": -13.5094,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 45.0,
+      "coast_exposure_score": 0.8,
+      "metadata": {
+        "municipio": "Teguise",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_LZ_PLAYA_DEL_COCHINO",
+      "name": "Playa del Cochino",
+      "isla": "Lanzarote",
+      "latitude": 29.0319,
+      "longitude": -13.8146,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 45.0,
+      "coast_exposure_score": 0.8,
+      "metadata": {
+        "municipio": "Yaiza",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_TF_AMARILLA",
+      "name": "Amarilla",
+      "isla": "Tenerife",
+      "latitude": 28.0092,
+      "longitude": -16.6385,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 270.0,
+      "coast_exposure_score": 0.4,
+      "metadata": {
+        "municipio": "San Miguel de Abona",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_TF_ARENISCO",
+      "name": "Arenisco",
+      "isla": "Tenerife",
+      "latitude": 28.5707,
+      "longitude": -16.3331,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 315.0,
+      "coast_exposure_score": 0.8,
+      "metadata": {
+        "municipio": "San Cristóbal de La Laguna",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_TF_EL_CALLAO_0",
+      "name": "El Callao",
+      "isla": "Tenerife",
+      "latitude": 28.0152,
+      "longitude": -16.7063,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 270.0,
+      "coast_exposure_score": 0.4,
+      "metadata": {
+        "municipio": "Arona",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_TF_LOS_ROQUES_1",
+      "name": "Los Roques",
+      "isla": "Tenerife",
+      "latitude": 28.3978,
+      "longitude": -16.645,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 315.0,
+      "coast_exposure_score": 0.8,
+      "metadata": {
+        "municipio": "San Juan de la Rambla",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    },
+    {
+      "zona_id": "CAN_TF_ROQUE_BERMEJO",
+      "name": "Roque Bermejo",
+      "isla": "Tenerife",
+      "latitude": 28.58,
+      "longitude": -16.1348,
+      "coords_source": "dataset",
+      "coast_orientation_deg": 45.0,
+      "coast_exposure_score": 0.8,
+      "metadata": {
+        "municipio": "Santa Cruz de Tenerife",
+        "bathymetry_depth_mean": null,
+        "bathymetry_depth_min": null,
+        "bathymetry_depth_max": null
+      }
+    }
+  ]
+}

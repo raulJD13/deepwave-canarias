@@ -1,0 +1,105 @@
+{
+  "service": "DeepWave Canarias API",
+  "version": "1.0.0",
+  "base_url_local": "http://127.0.0.1:8000",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "description": "Comprueba que la API está activa.",
+      "response_file": null
+    },
+    {
+      "method": "GET",
+      "path": "/zones",
+      "description": "Lista zonas disponibles con coordenadas y metadatos.",
+      "response_file": "zones.json"
+    },
+    {
+      "method": "GET",
+      "path": "/predict/{zona_id}",
+      "description": "Devuelve forecast completo por zona.",
+      "response_file": "forecast_by_zone.json",
+      "params": [
+        {
+          "name": "horizon",
+          "type": "int",
+          "required": false,
+          "values": [
+            3,
+            6,
+            12,
+            24,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/predict/all",
+      "description": "Devuelve predicción seleccionada para todas las zonas. Útil para mapa.",
+      "response_file": "latest_predictions.json",
+      "params": [
+        {
+          "name": "horizon",
+          "type": "int",
+          "required": false,
+          "values": [
+            3,
+            6,
+            12,
+            24,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/risk/{zona_id}",
+      "description": "Devuelve riesgos general, playa y navegación por zona.",
+      "response_file": "forecast_by_zone.json"
+    },
+    {
+      "method": "GET",
+      "path": "/surf/{zona_id}",
+      "description": "Devuelve surf score y categoría por zona.",
+      "response_file": "forecast_by_zone.json"
+    },
+    {
+      "method": "GET",
+      "path": "/model/summary",
+      "description": "Resumen del sistema de modelos y métricas.",
+      "response_file": "model_summary.json"
+    }
+  ],
+  "schemas": {
+    "ForecastRecord": {
+      "zona_id": "string",
+      "zone_name": "string",
+      "isla": "string",
+      "base_time": "datetime",
+      "valid_time": "datetime",
+      "horizon_hours": "int",
+      "physical": "object",
+      "risk_general": "RiskPayload",
+      "risk_beach": "RiskPayload",
+      "risk_navigation": "RiskPayload",
+      "surf": "SurfPayload",
+      "recommendation": "string"
+    },
+    "RiskPayload": {
+      "level": "int|null",
+      "label": "string",
+      "label_es": "string",
+      "color": "hex"
+    },
+    "SurfPayload": {
+      "score": "float|null",
+      "quality": "string",
+      "quality_es": "string",
+      "color": "hex"
+    }
+  }
+}

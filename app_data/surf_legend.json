@@ -1,0 +1,47 @@
+{
+  "quality_levels": [
+    {
+      "quality": "poor",
+      "label_es": "malo",
+      "color": "#95a5a6",
+      "min": 0,
+      "max": 2
+    },
+    {
+      "quality": "fair",
+      "label_es": "regular",
+      "color": "#f1c40f",
+      "min": 2,
+      "max": 4
+    },
+    {
+      "quality": "good",
+      "label_es": "bueno",
+      "color": "#2ecc71",
+      "min": 4,
+      "max": 6
+    },
+    {
+      "quality": "very_good",
+      "label_es": "muy bueno",
+      "color": "#3498db",
+      "min": 6,
+      "max": 8
+    },
+    {
+      "quality": "epic",
+      "label_es": "excelente",
+      "color": "#9b59b6",
+      "min": 8,
+      "max": 10
+    }
+  ],
+  "score_config": {
+    "ideal_hs_min": 0.8,
+    "ideal_hs_max": 2.5,
+    "ideal_period_min": 9.0,
+    "ideal_period_good": 12.0,
+    "bad_wind_speed": 10.0,
+    "very_bad_wind_speed": 14.0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "api_base_url": "http://127.0.0.1:8000",
+  "default_horizon": 24,
+  "available_horizons": [
+    3,
+    6,
+    12,
+    24,
+    48
+  ],
+  "map_center": {
+    "lat": 28.3,
+    "lon": -15.8,
+    "zoom": 7
+  },
+  "risk_colors": {
+    "0": "#2ecc71",
+    "1": "#f1c40f",
+    "2": "#e67e22",
+    "3": "#e74c3c"
+  },
+  "surf_colors": {
+    "poor": "#95a5a6",
+    "fair": "#f1c40f",
+    "good": "#2ecc71",
+    "very_good": "#3498db",
+    "epic": "#9b59b6"
+  },
+  "default_layer": "risk_beach"
+}

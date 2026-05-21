@@ -1,0 +1,4319 @@
+{
+  "generated_at": "2026-05-21T10:53:24.670028+00:00",
+  "source_split": "test",
+  "count": 14,
+  "data": {
+    "CAN_EH_PUERTO_DE_LA_ESTACA": {
+      "zone": {
+        "zona_id": "CAN_EH_PUERTO_DE_LA_ESTACA",
+        "name": "Puerto de la Estaca",
+        "isla": "El Hierro",
+        "latitude": 27.7837,
+        "longitude": -17.9045,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 270.0,
+        "coast_exposure_score": 0.4,
+        "metadata": {
+          "municipio": "Valverde",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_EH_PUERTO_DE_LA_ESTACA",
+          "zone_name": "Puerto de la Estaca",
+          "isla": "El Hierro",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.7716,
+            "tm02": null,
+            "tp": 15.6964,
+            "period": 15.6964,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": null,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.7716,
+          "period": 15.6964,
+          "wind_speed": null,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.77 m, periodo 15.7 s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_EH_PUERTO_DE_LA_ESTACA",
+          "zone_name": "Puerto de la Estaca",
+          "isla": "El Hierro",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.8927,
+            "tm02": null,
+            "tp": 15.7753,
+            "period": 15.7753,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": null,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.8927,
+          "period": 15.7753,
+          "wind_speed": null,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.89 m, periodo 15.8 s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_EH_PUERTO_DE_LA_ESTACA",
+          "zone_name": "Puerto de la Estaca",
+          "isla": "El Hierro",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 2.142,
+            "tm02": null,
+            "tp": 15.0974,
+            "period": 15.0974,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": null,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.142,
+          "period": 15.0974,
+          "wind_speed": null,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.14 m, periodo 15.1 s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_EH_PUERTO_DE_LA_ESTACA",
+          "zone_name": "Puerto de la Estaca",
+          "isla": "El Hierro",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 2.0134,
+            "tm02": null,
+            "tp": 13.2686,
+            "period": 13.2686,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": null,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.0134,
+          "period": 13.2686,
+          "wind_speed": null,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.01 m, periodo 13.3 s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_EH_PUERTO_DE_LA_ESTACA",
+          "zone_name": "Puerto de la Estaca",
+          "isla": "El Hierro",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 1.7646,
+            "tm02": null,
+            "tp": 12.3846,
+            "period": 12.3846,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": null,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.7646,
+          "period": 12.3846,
+          "wind_speed": null,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.76 m, periodo 12.4 s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.627686+00:00"
+    },
+    "CAN_FV_GRAN_TARAJAL": {
+      "zone": {
+        "zona_id": "CAN_FV_GRAN_TARAJAL",
+        "name": "Gran Tarajal",
+        "isla": "Fuerteventura",
+        "latitude": 28.2113,
+        "longitude": -14.0195,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 45.0,
+        "coast_exposure_score": 0.8,
+        "metadata": {
+          "municipio": "Tuineje",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_FV_GRAN_TARAJAL",
+          "zone_name": "Gran Tarajal",
+          "isla": "Fuerteventura",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 0.1883,
+            "tm02": null,
+            "tp": 14.0077,
+            "period": 14.0077,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": null,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "risk_beach": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "risk_navigation": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "surf": {
+            "score": 2.0,
+            "quality": "fair",
+            "quality_es": "regular",
+            "color": "#f1c40f"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 0.1883,
+          "period": 14.0077,
+          "wind_speed": null,
+          "recommendation": "Riesgo bajo para playa en las condiciones previstas. Calidad de surf limitada según el score físico previsto. Resumen físico: ola 0.19 m, periodo 14.0 s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_FV_GRAN_TARAJAL",
+          "zone_name": "Gran Tarajal",
+          "isla": "Fuerteventura",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 0.3043,
+            "tm02": null,
+            "tp": 11.4785,
+            "period": 11.4785,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": null,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "risk_beach": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "risk_navigation": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "surf": {
+            "score": 1.0,
+            "quality": "poor",
+            "quality_es": "malo",
+            "color": "#95a5a6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 0.3043,
+          "period": 11.4785,
+          "wind_speed": null,
+          "recommendation": "Riesgo bajo para playa en las condiciones previstas. Calidad de surf limitada según el score físico previsto. Resumen físico: ola 0.30 m, periodo 11.5 s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_FV_GRAN_TARAJAL",
+          "zone_name": "Gran Tarajal",
+          "isla": "Fuerteventura",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 0.4902,
+            "tm02": null,
+            "tp": 12.9109,
+            "period": 12.9109,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": null,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "risk_beach": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "risk_navigation": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "surf": {
+            "score": 4.0,
+            "quality": "good",
+            "quality_es": "bueno",
+            "color": "#2ecc71"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 0.4902,
+          "period": 12.9109,
+          "wind_speed": null,
+          "recommendation": "Riesgo bajo para playa en las condiciones previstas. Resumen físico: ola 0.49 m, periodo 12.9 s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_FV_GRAN_TARAJAL",
+          "zone_name": "Gran Tarajal",
+          "isla": "Fuerteventura",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 0.4396,
+            "tm02": null,
+            "tp": 10.1873,
+            "period": 10.1873,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": null,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "risk_beach": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "risk_navigation": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "surf": {
+            "score": 3.0,
+            "quality": "fair",
+            "quality_es": "regular",
+            "color": "#f1c40f"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 0.4396,
+          "period": 10.1873,
+          "wind_speed": null,
+          "recommendation": "Riesgo bajo para playa en las condiciones previstas. Calidad de surf limitada según el score físico previsto. Resumen físico: ola 0.44 m, periodo 10.2 s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_FV_GRAN_TARAJAL",
+          "zone_name": "Gran Tarajal",
+          "isla": "Fuerteventura",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 0.661,
+            "tm02": null,
+            "tp": 8.3813,
+            "period": 8.3813,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": null,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "risk_beach": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "risk_navigation": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "surf": {
+            "score": 2.0,
+            "quality": "fair",
+            "quality_es": "regular",
+            "color": "#f1c40f"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 0.661,
+          "period": 8.3813,
+          "wind_speed": null,
+          "recommendation": "Riesgo bajo para playa en las condiciones previstas. Calidad de surf limitada según el score físico previsto. Resumen físico: ola 0.66 m, periodo 8.4 s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.628426+00:00"
+    },
+    "CAN_FV_PLAYA_DEL_VALLE": {
+      "zone": {
+        "zona_id": "CAN_FV_PLAYA_DEL_VALLE",
+        "name": "Playa del Valle",
+        "isla": "Fuerteventura",
+        "latitude": 28.4854,
+        "longitude": -14.0943,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 45.0,
+        "coast_exposure_score": 0.8,
+        "metadata": {
+          "municipio": "Betancuria",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_FV_PLAYA_DEL_VALLE",
+          "zone_name": "Playa del Valle",
+          "isla": "Fuerteventura",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.5595,
+            "tm02": null,
+            "tp": 12.2786,
+            "period": 12.2786,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.2783,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.5595,
+          "period": 12.2786,
+          "wind_speed": 2.2783,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.56 m, periodo 12.3 s, viento 2.3 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_FV_PLAYA_DEL_VALLE",
+          "zone_name": "Playa del Valle",
+          "isla": "Fuerteventura",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.5874,
+            "tm02": null,
+            "tp": 14.8843,
+            "period": 14.8843,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.0388,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.5874,
+          "period": 14.8843,
+          "wind_speed": 3.0388,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.59 m, periodo 14.9 s, viento 3.0 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_FV_PLAYA_DEL_VALLE",
+          "zone_name": "Playa del Valle",
+          "isla": "Fuerteventura",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 1.7376,
+            "tm02": null,
+            "tp": 15.1336,
+            "period": 15.1336,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.1037,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.7376,
+          "period": 15.1336,
+          "wind_speed": 4.1037,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.74 m, periodo 15.1 s, viento 4.1 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_FV_PLAYA_DEL_VALLE",
+          "zone_name": "Playa del Valle",
+          "isla": "Fuerteventura",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 1.9733,
+            "tm02": null,
+            "tp": 15.0205,
+            "period": 15.0205,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.9615,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.9733,
+          "period": 15.0205,
+          "wind_speed": 4.9615,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.97 m, periodo 15.0 s, viento 5.0 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_FV_PLAYA_DEL_VALLE",
+          "zone_name": "Playa del Valle",
+          "isla": "Fuerteventura",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 2.2228,
+            "tm02": null,
+            "tp": 13.4218,
+            "period": 13.4218,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.64,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.2228,
+          "period": 13.4218,
+          "wind_speed": 5.64,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.22 m, periodo 13.4 s, viento 5.6 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.628994+00:00"
+    },
+    "CAN_GC_SAN_CRISTOBAL": {
+      "zone": {
+        "zona_id": "CAN_GC_SAN_CRISTOBAL",
+        "name": "San Cristóbal",
+        "isla": "Gran Canaria",
+        "latitude": 28.0771,
+        "longitude": -15.4145,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 90.0,
+        "coast_exposure_score": 0.4,
+        "metadata": {
+          "municipio": "Las Palmas de Gran Canaria",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_GC_SAN_CRISTOBAL",
+          "zone_name": "San Cristóbal",
+          "isla": "Gran Canaria",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.2688,
+            "tm02": null,
+            "tp": 10.3738,
+            "period": 10.3738,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 1.8242,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.2688,
+          "period": 10.3738,
+          "wind_speed": 1.8242,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación con precaución para embarcaciones pequeñas. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.27 m, periodo 10.4 s, viento 1.8 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_GC_SAN_CRISTOBAL",
+          "zone_name": "San Cristóbal",
+          "isla": "Gran Canaria",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.2414,
+            "tm02": null,
+            "tp": 11.3862,
+            "period": 11.3862,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.7634,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.2414,
+          "period": 11.3862,
+          "wind_speed": 2.7634,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación con precaución para embarcaciones pequeñas. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.24 m, periodo 11.4 s, viento 2.8 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_GC_SAN_CRISTOBAL",
+          "zone_name": "San Cristóbal",
+          "isla": "Gran Canaria",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 1.2938,
+            "tm02": null,
+            "tp": 13.1243,
+            "period": 13.1243,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.6351,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.2938,
+          "period": 13.1243,
+          "wind_speed": 3.6351,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación con precaución para embarcaciones pequeñas. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.29 m, periodo 13.1 s, viento 3.6 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_GC_SAN_CRISTOBAL",
+          "zone_name": "San Cristóbal",
+          "isla": "Gran Canaria",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 1.3484,
+            "tm02": null,
+            "tp": 15.0137,
+            "period": 15.0137,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.0359,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.3484,
+          "period": 15.0137,
+          "wind_speed": 4.0359,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación con precaución para embarcaciones pequeñas. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.35 m, periodo 15.0 s, viento 4.0 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_GC_SAN_CRISTOBAL",
+          "zone_name": "San Cristóbal",
+          "isla": "Gran Canaria",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 1.5187,
+            "tm02": null,
+            "tp": 12.0777,
+            "period": 12.0777,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.8149,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.5187,
+          "period": 12.0777,
+          "wind_speed": 4.8149,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.52 m, periodo 12.1 s, viento 4.8 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.629520+00:00"
+    },
+    "CAN_LG_ERESES": {
+      "zone": {
+        "zona_id": "CAN_LG_ERESES",
+        "name": "Ereses",
+        "isla": "La Gomera",
+        "latitude": 28.0246,
+        "longitude": -17.235,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 270.0,
+        "coast_exposure_score": 0.4,
+        "metadata": {
+          "municipio": "Alajeró",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_LG_ERESES",
+          "zone_name": "Ereses",
+          "isla": "La Gomera",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.308,
+            "tm02": null,
+            "tp": 16.322,
+            "period": 16.322,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.4336,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.308,
+          "period": 16.322,
+          "wind_speed": 2.4336,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación con precaución para embarcaciones pequeñas. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.31 m, periodo 16.3 s, viento 2.4 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LG_ERESES",
+          "zone_name": "Ereses",
+          "isla": "La Gomera",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.5499,
+            "tm02": null,
+            "tp": 15.968,
+            "period": 15.968,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.5863,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.5499,
+          "period": 15.968,
+          "wind_speed": 3.5863,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.55 m, periodo 16.0 s, viento 3.6 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LG_ERESES",
+          "zone_name": "Ereses",
+          "isla": "La Gomera",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 2.017,
+            "tm02": null,
+            "tp": 15.5474,
+            "period": 15.5474,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.089,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.017,
+          "period": 15.5474,
+          "wind_speed": 5.089,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.02 m, periodo 15.5 s, viento 5.1 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LG_ERESES",
+          "zone_name": "Ereses",
+          "isla": "La Gomera",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 1.9904,
+            "tm02": null,
+            "tp": 15.2889,
+            "period": 15.2889,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.4947,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.9904,
+          "period": 15.2889,
+          "wind_speed": 5.4947,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.99 m, periodo 15.3 s, viento 5.5 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LG_ERESES",
+          "zone_name": "Ereses",
+          "isla": "La Gomera",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 1.8996,
+            "tm02": null,
+            "tp": 12.1802,
+            "period": 12.1802,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.381,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.8996,
+          "period": 12.1802,
+          "wind_speed": 5.381,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.90 m, periodo 12.2 s, viento 5.4 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.630026+00:00"
+    },
+    "CAN_LP_CALLEJONCITOS": {
+      "zone": {
+        "zona_id": "CAN_LP_CALLEJONCITOS",
+        "name": "Callejoncitos",
+        "isla": "La Palma",
+        "latitude": 28.8148,
+        "longitude": -17.9717,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 315.0,
+        "coast_exposure_score": 0.8,
+        "metadata": {
+          "municipio": "Garafía",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_LP_CALLEJONCITOS",
+          "zone_name": "Callejoncitos",
+          "isla": "La Palma",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 2.0612,
+            "tm02": null,
+            "tp": 15.8529,
+            "period": 15.8529,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.9235,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.0612,
+          "period": 15.8529,
+          "wind_speed": 3.9235,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.06 m, periodo 15.9 s, viento 3.9 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LP_CALLEJONCITOS",
+          "zone_name": "Callejoncitos",
+          "isla": "La Palma",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 2.2486,
+            "tm02": null,
+            "tp": 15.1271,
+            "period": 15.1271,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.5022,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.2486,
+          "period": 15.1271,
+          "wind_speed": 4.5022,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.25 m, periodo 15.1 s, viento 4.5 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LP_CALLEJONCITOS",
+          "zone_name": "Callejoncitos",
+          "isla": "La Palma",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 2.7191,
+            "tm02": null,
+            "tp": 14.7425,
+            "period": 14.7425,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.9157,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 5.0,
+            "quality": "good",
+            "quality_es": "bueno",
+            "color": "#2ecc71"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.7191,
+          "period": 14.7425,
+          "wind_speed": 5.9157,
+          "recommendation": "Riesgo extremo para baño. Evitar zonas expuestas y consultar avisos oficiales. Navegación ligera no recomendable. Resumen físico: ola 2.72 m, periodo 14.7 s, viento 5.9 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LP_CALLEJONCITOS",
+          "zone_name": "Callejoncitos",
+          "isla": "La Palma",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 2.7343,
+            "tm02": null,
+            "tp": 14.2387,
+            "period": 14.2387,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.2344,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 6.0,
+            "quality": "very_good",
+            "quality_es": "muy bueno",
+            "color": "#3498db"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.7343,
+          "period": 14.2387,
+          "wind_speed": 4.2344,
+          "recommendation": "Riesgo extremo para baño. Evitar zonas expuestas y consultar avisos oficiales. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.73 m, periodo 14.2 s, viento 4.2 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LP_CALLEJONCITOS",
+          "zone_name": "Callejoncitos",
+          "isla": "La Palma",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 2.5034,
+            "tm02": null,
+            "tp": 12.892,
+            "period": 12.892,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.7545,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 6.0,
+            "quality": "very_good",
+            "quality_es": "muy bueno",
+            "color": "#3498db"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.5034,
+          "period": 12.892,
+          "wind_speed": 4.7545,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.50 m, periodo 12.9 s, viento 4.8 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.630533+00:00"
+    },
+    "CAN_LP_EL_CHARCON": {
+      "zone": {
+        "zona_id": "CAN_LP_EL_CHARCON",
+        "name": "El Charcón",
+        "isla": "La Palma",
+        "latitude": 28.6015,
+        "longitude": -17.9236,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 315.0,
+        "coast_exposure_score": 0.8,
+        "metadata": {
+          "municipio": "Tazacorte",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_LP_EL_CHARCON",
+          "zone_name": "El Charcón",
+          "isla": "La Palma",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.6587,
+            "tm02": null,
+            "tp": 15.8367,
+            "period": 15.8367,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.1055,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.6587,
+          "period": 15.8367,
+          "wind_speed": 2.1055,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.66 m, periodo 15.8 s, viento 2.1 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LP_EL_CHARCON",
+          "zone_name": "El Charcón",
+          "isla": "La Palma",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.7775,
+            "tm02": null,
+            "tp": 15.0667,
+            "period": 15.0667,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.4975,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.7775,
+          "period": 15.0667,
+          "wind_speed": 2.4975,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.78 m, periodo 15.1 s, viento 2.5 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LP_EL_CHARCON",
+          "zone_name": "El Charcón",
+          "isla": "La Palma",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 2.1301,
+            "tm02": null,
+            "tp": 14.7988,
+            "period": 14.7988,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.2574,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.1301,
+          "period": 14.7988,
+          "wind_speed": 3.2574,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.13 m, periodo 14.8 s, viento 3.3 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LP_EL_CHARCON",
+          "zone_name": "El Charcón",
+          "isla": "La Palma",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 2.165,
+            "tm02": null,
+            "tp": 14.0664,
+            "period": 14.0664,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.7424,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.165,
+          "period": 14.0664,
+          "wind_speed": 3.7424,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.17 m, periodo 14.1 s, viento 3.7 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LP_EL_CHARCON",
+          "zone_name": "El Charcón",
+          "isla": "La Palma",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 2.0007,
+            "tm02": null,
+            "tp": 12.9531,
+            "period": 12.9531,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.1333,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.0007,
+          "period": 12.9531,
+          "wind_speed": 4.1333,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.00 m, periodo 13.0 s, viento 4.1 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.631045+00:00"
+    },
+    "CAN_LZ_ISLA_DE_LA_ALEGRANZA": {
+      "zone": {
+        "zona_id": "CAN_LZ_ISLA_DE_LA_ALEGRANZA",
+        "name": "Isla de la Alegranza",
+        "isla": "Alegranza",
+        "latitude": 29.3858,
+        "longitude": -13.5094,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 45.0,
+        "coast_exposure_score": 0.8,
+        "metadata": {
+          "municipio": "Teguise",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_LZ_ISLA_DE_LA_ALEGRANZA",
+          "zone_name": "Isla de la Alegranza",
+          "isla": "Alegranza",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.5306,
+            "tm02": null,
+            "tp": 12.1061,
+            "period": 12.1061,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.1159,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.5306,
+          "period": 12.1061,
+          "wind_speed": 2.1159,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.53 m, periodo 12.1 s, viento 2.1 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LZ_ISLA_DE_LA_ALEGRANZA",
+          "zone_name": "Isla de la Alegranza",
+          "isla": "Alegranza",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.5557,
+            "tm02": null,
+            "tp": 14.0278,
+            "period": 14.0278,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.3842,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.5557,
+          "period": 14.0278,
+          "wind_speed": 3.3842,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.56 m, periodo 14.0 s, viento 3.4 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LZ_ISLA_DE_LA_ALEGRANZA",
+          "zone_name": "Isla de la Alegranza",
+          "isla": "Alegranza",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 1.6751,
+            "tm02": null,
+            "tp": 14.5442,
+            "period": 14.5442,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.1481,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.6751,
+          "period": 14.5442,
+          "wind_speed": 5.1481,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.68 m, periodo 14.5 s, viento 5.1 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LZ_ISLA_DE_LA_ALEGRANZA",
+          "zone_name": "Isla de la Alegranza",
+          "isla": "Alegranza",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 1.9657,
+            "tm02": null,
+            "tp": 14.9693,
+            "period": 14.9693,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 6.376,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.9657,
+          "period": 14.9693,
+          "wind_speed": 6.376,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.97 m, periodo 15.0 s, viento 6.4 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LZ_ISLA_DE_LA_ALEGRANZA",
+          "zone_name": "Isla de la Alegranza",
+          "isla": "Alegranza",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 2.2441,
+            "tm02": null,
+            "tp": 13.3251,
+            "period": 13.3251,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.6748,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.2441,
+          "period": 13.3251,
+          "wind_speed": 5.6748,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.24 m, periodo 13.3 s, viento 5.7 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.631539+00:00"
+    },
+    "CAN_LZ_PLAYA_DEL_COCHINO": {
+      "zone": {
+        "zona_id": "CAN_LZ_PLAYA_DEL_COCHINO",
+        "name": "Playa del Cochino",
+        "isla": "Lanzarote",
+        "latitude": 29.0319,
+        "longitude": -13.8146,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 45.0,
+        "coast_exposure_score": 0.8,
+        "metadata": {
+          "municipio": "Yaiza",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_LZ_PLAYA_DEL_COCHINO",
+          "zone_name": "Playa del Cochino",
+          "isla": "Lanzarote",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.5962,
+            "tm02": null,
+            "tp": 13.5127,
+            "period": 13.5127,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.3583,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.5962,
+          "period": 13.5127,
+          "wind_speed": 2.3583,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.60 m, periodo 13.5 s, viento 2.4 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LZ_PLAYA_DEL_COCHINO",
+          "zone_name": "Playa del Cochino",
+          "isla": "Lanzarote",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.7201,
+            "tm02": null,
+            "tp": 15.6162,
+            "period": 15.6162,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.2761,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.7201,
+          "period": 15.6162,
+          "wind_speed": 3.2761,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.72 m, periodo 15.6 s, viento 3.3 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LZ_PLAYA_DEL_COCHINO",
+          "zone_name": "Playa del Cochino",
+          "isla": "Lanzarote",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 1.974,
+            "tm02": null,
+            "tp": 15.2658,
+            "period": 15.2658,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.6517,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.974,
+          "period": 15.2658,
+          "wind_speed": 5.6517,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.97 m, periodo 15.3 s, viento 5.7 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LZ_PLAYA_DEL_COCHINO",
+          "zone_name": "Playa del Cochino",
+          "isla": "Lanzarote",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 2.1145,
+            "tm02": null,
+            "tp": 14.361,
+            "period": 14.361,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.4847,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.1145,
+          "period": 14.361,
+          "wind_speed": 5.4847,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.11 m, periodo 14.4 s, viento 5.5 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_LZ_PLAYA_DEL_COCHINO",
+          "zone_name": "Playa del Cochino",
+          "isla": "Lanzarote",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 2.2758,
+            "tm02": null,
+            "tp": 12.9499,
+            "period": 12.9499,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.5344,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.2758,
+          "period": 12.9499,
+          "wind_speed": 5.5344,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.28 m, periodo 12.9 s, viento 5.5 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.632069+00:00"
+    },
+    "CAN_TF_AMARILLA": {
+      "zone": {
+        "zona_id": "CAN_TF_AMARILLA",
+        "name": "Amarilla",
+        "isla": "Tenerife",
+        "latitude": 28.0092,
+        "longitude": -16.6385,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 270.0,
+        "coast_exposure_score": 0.4,
+        "metadata": {
+          "municipio": "San Miguel de Abona",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_TF_AMARILLA",
+          "zone_name": "Amarilla",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.1503,
+            "tm02": null,
+            "tp": 14.0147,
+            "period": 14.0147,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.1639,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "low",
+            "label_es": "bajo",
+            "color": "#2ecc71",
+            "level": 0
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.1503,
+          "period": 14.0147,
+          "wind_speed": 2.1639,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.15 m, periodo 14.0 s, viento 2.2 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_AMARILLA",
+          "zone_name": "Amarilla",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.2684,
+            "tm02": null,
+            "tp": 14.7816,
+            "period": 14.7816,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.9846,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.2684,
+          "period": 14.7816,
+          "wind_speed": 2.9846,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación con precaución para embarcaciones pequeñas. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.27 m, periodo 14.8 s, viento 3.0 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_AMARILLA",
+          "zone_name": "Amarilla",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 1.5466,
+            "tm02": null,
+            "tp": 14.4313,
+            "period": 14.4313,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.264,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.5466,
+          "period": 14.4313,
+          "wind_speed": 4.264,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.55 m, periodo 14.4 s, viento 4.3 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_AMARILLA",
+          "zone_name": "Amarilla",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 1.6626,
+            "tm02": null,
+            "tp": 13.2194,
+            "period": 13.2194,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.9646,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.6626,
+          "period": 13.2194,
+          "wind_speed": 4.9646,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.66 m, periodo 13.2 s, viento 5.0 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_AMARILLA",
+          "zone_name": "Amarilla",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 1.6123,
+            "tm02": null,
+            "tp": 11.9104,
+            "period": 11.9104,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.8459,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 7.0,
+            "quality": "very_good",
+            "quality_es": "muy bueno",
+            "color": "#3498db"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.6123,
+          "period": 11.9104,
+          "wind_speed": 5.8459,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.61 m, periodo 11.9 s, viento 5.8 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.633174+00:00"
+    },
+    "CAN_TF_ARENISCO": {
+      "zone": {
+        "zona_id": "CAN_TF_ARENISCO",
+        "name": "Arenisco",
+        "isla": "Tenerife",
+        "latitude": 28.5707,
+        "longitude": -16.3331,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 315.0,
+        "coast_exposure_score": 0.8,
+        "metadata": {
+          "municipio": "San Cristóbal de La Laguna",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_TF_ARENISCO",
+          "zone_name": "Arenisco",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.8883,
+            "tm02": null,
+            "tp": 16.1218,
+            "period": 16.1218,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.5462,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.8883,
+          "period": 16.1218,
+          "wind_speed": 3.5462,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.89 m, periodo 16.1 s, viento 3.5 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_ARENISCO",
+          "zone_name": "Arenisco",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 2.0846,
+            "tm02": null,
+            "tp": 15.6604,
+            "period": 15.6604,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.38,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.0846,
+          "period": 15.6604,
+          "wind_speed": 4.38,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.08 m, periodo 15.7 s, viento 4.4 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_ARENISCO",
+          "zone_name": "Arenisco",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 2.5295,
+            "tm02": null,
+            "tp": 15.7165,
+            "period": 15.7165,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 6.193,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 5.0,
+            "quality": "good",
+            "quality_es": "bueno",
+            "color": "#2ecc71"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.5295,
+          "period": 15.7165,
+          "wind_speed": 6.193,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Resumen físico: ola 2.53 m, periodo 15.7 s, viento 6.2 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_ARENISCO",
+          "zone_name": "Arenisco",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 2.4934,
+            "tm02": null,
+            "tp": 14.1565,
+            "period": 14.1565,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.7113,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.4934,
+          "period": 14.1565,
+          "wind_speed": 4.7113,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.49 m, periodo 14.2 s, viento 4.7 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_ARENISCO",
+          "zone_name": "Arenisco",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 2.3873,
+            "tm02": null,
+            "tp": 12.1485,
+            "period": 12.1485,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.6742,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.3873,
+          "period": 12.1485,
+          "wind_speed": 5.6742,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.39 m, periodo 12.1 s, viento 5.7 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.633969+00:00"
+    },
+    "CAN_TF_EL_CALLAO_0": {
+      "zone": {
+        "zona_id": "CAN_TF_EL_CALLAO_0",
+        "name": "El Callao",
+        "isla": "Tenerife",
+        "latitude": 28.0152,
+        "longitude": -16.7063,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 270.0,
+        "coast_exposure_score": 0.4,
+        "metadata": {
+          "municipio": "Arona",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_TF_EL_CALLAO_0",
+          "zone_name": "El Callao",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.6298,
+            "tm02": null,
+            "tp": 13.8705,
+            "period": 13.8705,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 1.8066,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.6298,
+          "period": 13.8705,
+          "wind_speed": 1.8066,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.63 m, periodo 13.9 s, viento 1.8 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_EL_CALLAO_0",
+          "zone_name": "El Callao",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.6863,
+            "tm02": null,
+            "tp": 16.2051,
+            "period": 16.2051,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.2666,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.6863,
+          "period": 16.2051,
+          "wind_speed": 2.2666,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.69 m, periodo 16.2 s, viento 2.3 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_EL_CALLAO_0",
+          "zone_name": "El Callao",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 1.8011,
+            "tm02": null,
+            "tp": 15.9419,
+            "period": 15.9419,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.9952,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.8011,
+          "period": 15.9419,
+          "wind_speed": 2.9952,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.80 m, periodo 15.9 s, viento 3.0 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_EL_CALLAO_0",
+          "zone_name": "El Callao",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 1.7657,
+            "tm02": null,
+            "tp": 15.2459,
+            "period": 15.2459,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.4586,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.7657,
+          "period": 15.2459,
+          "wind_speed": 4.4586,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.77 m, periodo 15.2 s, viento 4.5 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_EL_CALLAO_0",
+          "zone_name": "El Callao",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 1.6406,
+            "tm02": null,
+            "tp": 12.2301,
+            "period": 12.2301,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.5493,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.6406,
+          "period": 12.2301,
+          "wind_speed": 5.5493,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.64 m, periodo 12.2 s, viento 5.5 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.634509+00:00"
+    },
+    "CAN_TF_LOS_ROQUES_1": {
+      "zone": {
+        "zona_id": "CAN_TF_LOS_ROQUES_1",
+        "name": "Los Roques",
+        "isla": "Tenerife",
+        "latitude": 28.3978,
+        "longitude": -16.645,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 315.0,
+        "coast_exposure_score": 0.8,
+        "metadata": {
+          "municipio": "San Juan de la Rambla",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_TF_LOS_ROQUES_1",
+          "zone_name": "Los Roques",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.765,
+            "tm02": null,
+            "tp": 15.6652,
+            "period": 15.6652,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 1.7603,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.765,
+          "period": 15.6652,
+          "wind_speed": 1.7603,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.76 m, periodo 15.7 s, viento 1.8 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_LOS_ROQUES_1",
+          "zone_name": "Los Roques",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.9341,
+            "tm02": null,
+            "tp": 17.5242,
+            "period": 17.5242,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.556,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.9341,
+          "period": 17.5242,
+          "wind_speed": 2.556,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.93 m, periodo 17.5 s, viento 2.6 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_LOS_ROQUES_1",
+          "zone_name": "Los Roques",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 2.2589,
+            "tm02": null,
+            "tp": 17.4018,
+            "period": 17.4018,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.2295,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.2589,
+          "period": 17.4018,
+          "wind_speed": 3.2295,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.26 m, periodo 17.4 s, viento 3.2 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_LOS_ROQUES_1",
+          "zone_name": "Los Roques",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 2.3208,
+            "tm02": null,
+            "tp": 15.1093,
+            "period": 15.1093,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.0981,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.3208,
+          "period": 15.1093,
+          "wind_speed": 4.0981,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.32 m, periodo 15.1 s, viento 4.1 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_LOS_ROQUES_1",
+          "zone_name": "Los Roques",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 2.303,
+            "tm02": null,
+            "tp": 12.8176,
+            "period": 12.8176,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.1465,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.303,
+          "period": 12.8176,
+          "wind_speed": 5.1465,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.30 m, periodo 12.8 s, viento 5.1 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.634987+00:00"
+    },
+    "CAN_TF_ROQUE_BERMEJO": {
+      "zone": {
+        "zona_id": "CAN_TF_ROQUE_BERMEJO",
+        "name": "Roque Bermejo",
+        "isla": "Tenerife",
+        "latitude": 28.58,
+        "longitude": -16.1348,
+        "coords_source": "dataset",
+        "coast_orientation_deg": 45.0,
+        "coast_exposure_score": 0.8,
+        "metadata": {
+          "municipio": "Santa Cruz de Tenerife",
+          "bathymetry_depth_mean": null,
+          "bathymetry_depth_min": null,
+          "bathymetry_depth_max": null
+        }
+      },
+      "forecast": [
+        {
+          "zona_id": "CAN_TF_ROQUE_BERMEJO",
+          "zone_name": "Roque Bermejo",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T02:00:00+00:00",
+          "horizon_hours": 3,
+          "physical": {
+            "hs": 1.7618,
+            "tm02": null,
+            "tp": 14.9142,
+            "period": 14.9142,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 2.4778,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.7618,
+          "period": 14.9142,
+          "wind_speed": 2.4778,
+          "recommendation": "Riesgo medio para playa. Condiciones moderadas; mantener precaución. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.76 m, periodo 14.9 s, viento 2.5 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_ROQUE_BERMEJO",
+          "zone_name": "Roque Bermejo",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T05:00:00+00:00",
+          "horizon_hours": 6,
+          "physical": {
+            "hs": 1.8821,
+            "tm02": null,
+            "tp": 16.4293,
+            "period": 16.4293,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 3.1805,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "moderate",
+            "label_es": "medio",
+            "color": "#f1c40f",
+            "level": 1
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 1.8821,
+          "period": 16.4293,
+          "wind_speed": 3.1805,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera con riesgo alto; revisar viento y oleaje antes de salir. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 1.88 m, periodo 16.4 s, viento 3.2 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_ROQUE_BERMEJO",
+          "zone_name": "Roque Bermejo",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T11:00:00+00:00",
+          "horizon_hours": 12,
+          "physical": {
+            "hs": 2.127,
+            "tm02": null,
+            "tp": 15.7238,
+            "period": 15.7238,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.103,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.127,
+          "period": 15.7238,
+          "wind_speed": 5.103,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.13 m, periodo 15.7 s, viento 5.1 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_ROQUE_BERMEJO",
+          "zone_name": "Roque Bermejo",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-30T23:00:00+00:00",
+          "horizon_hours": 24,
+          "physical": {
+            "hs": 2.1769,
+            "tm02": null,
+            "tp": 15.0556,
+            "period": 15.0556,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 4.6923,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 9.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.1769,
+          "period": 15.0556,
+          "wind_speed": 4.6923,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.18 m, periodo 15.1 s, viento 4.7 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        },
+        {
+          "zona_id": "CAN_TF_ROQUE_BERMEJO",
+          "zone_name": "Roque Bermejo",
+          "isla": "Tenerife",
+          "base_time": "2025-12-29T23:00:00+00:00",
+          "valid_time": "2025-12-31T23:00:00+00:00",
+          "horizon_hours": 48,
+          "physical": {
+            "hs": 2.0042,
+            "tm02": null,
+            "tp": 12.9507,
+            "period": 12.9507,
+            "swell_height": null,
+            "swell_period": null,
+            "wave_direction": null,
+            "swell_direction": null,
+            "wind_speed": 5.1089,
+            "wind_direction": null,
+            "sea_level": null,
+            "daily_tidal_range": null,
+            "wind_wave_height": null
+          },
+          "risk_general": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_beach": {
+            "label": "high",
+            "label_es": "alto",
+            "color": "#e67e22",
+            "level": 2
+          },
+          "risk_navigation": {
+            "label": "extreme",
+            "label_es": "extremo",
+            "color": "#e74c3c",
+            "level": 3
+          },
+          "surf": {
+            "score": 8.0,
+            "quality": "epic",
+            "quality_es": "excelente",
+            "color": "#9b59b6"
+          },
+          "quality": {
+            "source": "precomputed_model_predictions",
+            "split": "test",
+            "is_demo_forecast": true
+          },
+          "hs": 2.0042,
+          "period": 12.9507,
+          "wind_speed": 5.1089,
+          "recommendation": "Riesgo alto para playa. Precaución especial con oleaje y corrientes. Navegación ligera no recomendable. Condiciones favorables para surf en zonas adecuadas. Resumen físico: ola 2.00 m, periodo 13.0 s, viento 5.1 m/s. DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales."
+        }
+      ],
+      "available_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "updated_at": "2026-05-21T10:53:24.635452+00:00"
+    }
+  }
+}
