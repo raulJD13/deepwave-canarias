@@ -79,6 +79,86 @@ gold/
 models/
 ```
 
+## Ejecución local y Docker
+
+La API de producción lee únicamente los artefactos ligeros de `app_data/`. No necesita entrenar modelos ni cargar carpetas pesadas como `gold/`, `silver/`, `bronze/`, `data/` o `models/`.
+
+Instalación local:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Lanzar la API FastAPI sin Docker:
+
+```bash
+uvicorn src.api.main:app --reload --host 127.0.0.1 --port 8000
+```
+
+También se puede usar el script:
+
+```bash
+./scripts/run_api.sh
+```
+
+Swagger y endpoints principales:
+
+```text
+http://127.0.0.1:8000/docs
+http://127.0.0.1:8000/health
+http://127.0.0.1:8000/zones
+http://127.0.0.1:8000/predict/all?horizon=24
+```
+
+Servir el frontend localmente:
+
+```bash
+cd frontend
+python -m http.server 5500
+```
+
+O desde la raíz del proyecto:
+
+```bash
+./scripts/run_frontend.sh
+```
+
+URL del frontend:
+
+```text
+http://127.0.0.1:5500
+```
+
+Ejecutar tests:
+
+```bash
+pytest -q
+```
+
+O con:
+
+```bash
+./scripts/run_tests.sh
+```
+
+Lanzar con Docker:
+
+```bash
+docker compose up --build
+```
+
+O con:
+
+```bash
+./scripts/run_docker.sh
+```
+
+El servicio Docker `deepwave-api` expone la API en `http://127.0.0.1:8000` y mantiene Swagger disponible en `/docs`. La imagen copia solo `src/`, `app_data/`, `frontend/` y `requirements.txt`; `.dockerignore` excluye entornos locales, cachés, notebooks temporales, datos pesados y modelos.
+
+DeepWave Canarias es una herramienta complementaria de apoyo a la decisión marítima. No sustituye avisos oficiales marítimos, meteorológicos, de socorrismo o emergencias.
+
 ## Limitaciones
 
 - Las etiquetas de riesgo y surf son derivadas mediante reglas físicas.
