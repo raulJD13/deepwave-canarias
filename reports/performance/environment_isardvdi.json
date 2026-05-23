@@ -1,0 +1,23 @@
+{
+  "env": "isardvdi",
+  "created_at": "2026-05-23T15:12:13.349961+00:00",
+  "platform": "Linux-6.14.0-33-generic-x86_64-with-glibc2.39",
+  "system": "Linux",
+  "release": "6.14.0-33-generic",
+  "machine": "x86_64",
+  "processor": "x86_64",
+  "python_version": "3.11.15",
+  "cpu_count_logical": 4,
+  "cwd": "/home/isard/Desktop/project/deepwave-canarias",
+  "git_commit": "f749f49",
+  "git_branch": "main",
+  "disk_usage_project": "328M",
+  "app_data_size": "356K",
+  "src_size": "92K",
+  "reports_size": "1.8M",
+  "pip_freeze_head": "annotated-doc==0.0.4\nannotated-types==0.7.0\nanyio==4.13.0\ncertifi==2026.5.20\nclick==8.4.1\nfastapi==0.136.1\nh11==0.16.0\nhttpcore==1.0.9\nhttptools==0.7.1\nhttpx==0.28.1\nidna==3.16\niniconfig==2.3.0\nlightgbm==4.6.0\nnumpy==2.4.6\npackaging==26.2\npluggy==1.6.0\npsutil==7.2.2\npydantic==2.13.4\npydantic_core==2.46.4\nPygments==2.20.0\npytest==9.0.3\npython-dotenv==1.2.2\nPyYAML==6.0.3\nscipy==1.17.1\nstarlette==1.0.1\ntyping-inspection==0.4.2\ntyping_extensions==4.15.0\nuvicorn==0.47.0\nuvloop==0.22.1\nwatchfiles==1.2.0\nwebsockets==16.0",
+  "ram_total_gb": 31.34,
+  "ram_available_gb": 28.42,
+  "cpu_count_physical": 4,
+  "cpu_count_logical_psutil": 4
+}

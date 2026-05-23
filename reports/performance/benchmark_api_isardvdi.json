@@ -1,0 +1,174 @@
+{
+  "env": "isardvdi",
+  "base_url": "http://127.0.0.1:8000",
+  "created_at": "2026-05-23T15:13:50.465105+00:00",
+  "requests_per_endpoint": 50,
+  "zona_id_used": "CAN_EH_PUERTO_DE_LA_ESTACA",
+  "summary": [
+    {
+      "env": "isardvdi",
+      "endpoint": "/health",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 4.8938,
+      "mean_ms": 8.5058,
+      "median_ms": 8.736,
+      "p95_ms": 12.1977,
+      "max_ms": 12.3075,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "isardvdi",
+      "endpoint": "/zones",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.5609,
+      "mean_ms": 1.8114,
+      "median_ms": 1.3333,
+      "p95_ms": 3.8291,
+      "max_ms": 5.739,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "isardvdi",
+      "endpoint": "/model/summary",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.473,
+      "mean_ms": 1.0564,
+      "median_ms": 0.6196,
+      "p95_ms": 2.7156,
+      "max_ms": 4.0754,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "isardvdi",
+      "endpoint": "/legends/risk",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4677,
+      "mean_ms": 0.6088,
+      "median_ms": 0.5246,
+      "p95_ms": 0.7984,
+      "max_ms": 2.2734,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "isardvdi",
+      "endpoint": "/legends/surf",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.5033,
+      "mean_ms": 0.619,
+      "median_ms": 0.5487,
+      "p95_ms": 0.8852,
+      "max_ms": 1.8097,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "isardvdi",
+      "endpoint": "/examples",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.5261,
+      "mean_ms": 0.6875,
+      "median_ms": 0.616,
+      "p95_ms": 0.999,
+      "max_ms": 1.0916,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "isardvdi",
+      "endpoint": "/predict/all?horizon=24",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.7582,
+      "mean_ms": 0.8597,
+      "median_ms": 0.8318,
+      "p95_ms": 1.0089,
+      "max_ms": 1.2172,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "isardvdi",
+      "endpoint": "/predict/CAN_EH_PUERTO_DE_LA_ESTACA",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.5689,
+      "mean_ms": 0.7326,
+      "median_ms": 0.6864,
+      "p95_ms": 1.0745,
+      "max_ms": 1.3087,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "isardvdi",
+      "endpoint": "/predict/CAN_EH_PUERTO_DE_LA_ESTACA?horizon=24",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.5677,
+      "mean_ms": 0.6774,
+      "median_ms": 0.6426,
+      "p95_ms": 0.8809,
+      "max_ms": 0.9902,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "isardvdi",
+      "endpoint": "/risk/CAN_EH_PUERTO_DE_LA_ESTACA",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.5786,
+      "mean_ms": 0.6627,
+      "median_ms": 0.6164,
+      "p95_ms": 0.8666,
+      "max_ms": 1.0303,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "isardvdi",
+      "endpoint": "/surf/CAN_EH_PUERTO_DE_LA_ESTACA",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.5283,
+      "mean_ms": 0.6659,
+      "median_ms": 0.6121,
+      "p95_ms": 0.8579,
+      "max_ms": 0.9277,
+      "statuses": [
+        "200"
+      ]
+    }
+  ]
+}

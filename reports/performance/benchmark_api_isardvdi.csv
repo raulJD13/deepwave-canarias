@@ -1,0 +1,12 @@
+env,endpoint,requests,ok,errors,min_ms,mean_ms,median_ms,p95_ms,max_ms,statuses
+isardvdi,/health,50,50,0,4.8938,8.5058,8.736,12.1977,12.3075,['200']
+isardvdi,/zones,50,50,0,0.5609,1.8114,1.3333,3.8291,5.739,['200']
+isardvdi,/model/summary,50,50,0,0.473,1.0564,0.6196,2.7156,4.0754,['200']
+isardvdi,/legends/risk,50,50,0,0.4677,0.6088,0.5246,0.7984,2.2734,['200']
+isardvdi,/legends/surf,50,50,0,0.5033,0.619,0.5487,0.8852,1.8097,['200']
+isardvdi,/examples,50,50,0,0.5261,0.6875,0.616,0.999,1.0916,['200']
+isardvdi,/predict/all?horizon=24,50,50,0,0.7582,0.8597,0.8318,1.0089,1.2172,['200']
+isardvdi,/predict/CAN_EH_PUERTO_DE_LA_ESTACA,50,50,0,0.5689,0.7326,0.6864,1.0745,1.3087,['200']
+isardvdi,/predict/CAN_EH_PUERTO_DE_LA_ESTACA?horizon=24,50,50,0,0.5677,0.6774,0.6426,0.8809,0.9902,['200']
+isardvdi,/risk/CAN_EH_PUERTO_DE_LA_ESTACA,50,50,0,0.5786,0.6627,0.6164,0.8666,1.0303,['200']
+isardvdi,/surf/CAN_EH_PUERTO_DE_LA_ESTACA,50,50,0,0.5283,0.6659,0.6121,0.8579,0.9277,['200']
