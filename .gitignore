@@ -50,3 +50,9 @@ logs/
 tmp/
 temp/
 cache/
+
+# Benchmark datasets ligeros permitidos
+!benchmarks/
+!benchmarks/data/
+!benchmarks/data/*.csv
+!benchmarks/data/*.json
