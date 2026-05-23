@@ -1,0 +1,12 @@
+env,endpoint,requests,ok,errors,min_ms,mean_ms,median_ms,p95_ms,max_ms,statuses
+mac_m2pro,/health,50,50,0,3.9759,4.2377,4.213,4.4482,5.1146,['200']
+mac_m2pro,/zones,50,50,0,0.4496,0.5153,0.5093,0.6009,0.6335,['200']
+mac_m2pro,/model/summary,50,50,0,0.4012,0.4523,0.4387,0.5131,0.6095,['200']
+mac_m2pro,/legends/risk,50,50,0,0.4272,0.7046,0.5101,1.7805,1.9919,['200']
+mac_m2pro,/legends/surf,50,50,0,0.4061,0.4915,0.4678,0.5764,1.1116,['200']
+mac_m2pro,/examples,50,50,0,0.4221,0.4597,0.4528,0.5067,0.6186,['200']
+mac_m2pro,/predict/all?horizon=24,50,50,0,0.4656,0.5671,0.5453,0.604,1.3183,['200']
+mac_m2pro,/predict/CAN_EH_PUERTO_DE_LA_ESTACA,50,50,0,0.4281,0.5063,0.4887,0.584,1.1001,['200']
+mac_m2pro,/predict/CAN_EH_PUERTO_DE_LA_ESTACA?horizon=24,50,50,0,0.4256,0.6198,0.5094,0.7705,4.0996,['200']
+mac_m2pro,/risk/CAN_EH_PUERTO_DE_LA_ESTACA,50,50,0,0.4677,0.8621,0.7129,1.5506,2.2672,['200']
+mac_m2pro,/surf/CAN_EH_PUERTO_DE_LA_ESTACA,50,50,0,0.4089,0.9441,0.5126,2.0818,4.3261,['200']

@@ -1,5 +1,9 @@
 from pathlib import Path
-import json, platform, os, subprocess, shutil
+import argparse
+import json
+import platform
+import os
+import subprocess
 from datetime import datetime, timezone
 
 try:
@@ -7,13 +11,25 @@ try:
 except Exception:
     psutil = None
 
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--env", default="local")
+args = parser.parse_args()
+
+
 def run(cmd):
     try:
-        return subprocess.check_output(cmd, shell=True, text=True, stderr=subprocess.STDOUT).strip()
+        return subprocess.check_output(
+            cmd,
+            shell=True,
+            text=True,
+            stderr=subprocess.STDOUT,
+        ).strip()
     except Exception as e:
         return str(e)
 
-env_name = "isardvdi"
+
+env_name = args.env
 out_dir = Path("reports/performance")
 out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -46,7 +62,8 @@ if psutil:
         "cpu_count_logical_psutil": psutil.cpu_count(logical=True),
     })
 
-out = out_dir / "environment_isardvdi.json"
+out = out_dir / f"environment_{env_name}.json"
 out.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+
 print(json.dumps(data, indent=2, ensure_ascii=False))
 print(f"\nSaved: {out}")

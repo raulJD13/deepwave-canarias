@@ -1,0 +1,174 @@
+{
+  "env": "mac_m2pro",
+  "base_url": "http://127.0.0.1:8000",
+  "created_at": "2026-05-23T15:52:10.750195+00:00",
+  "requests_per_endpoint": 50,
+  "zona_id_used": "CAN_EH_PUERTO_DE_LA_ESTACA",
+  "summary": [
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/health",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 3.9759,
+      "mean_ms": 4.2377,
+      "median_ms": 4.213,
+      "p95_ms": 4.4482,
+      "max_ms": 5.1146,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/zones",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4496,
+      "mean_ms": 0.5153,
+      "median_ms": 0.5093,
+      "p95_ms": 0.6009,
+      "max_ms": 0.6335,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/model/summary",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4012,
+      "mean_ms": 0.4523,
+      "median_ms": 0.4387,
+      "p95_ms": 0.5131,
+      "max_ms": 0.6095,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/legends/risk",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4272,
+      "mean_ms": 0.7046,
+      "median_ms": 0.5101,
+      "p95_ms": 1.7805,
+      "max_ms": 1.9919,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/legends/surf",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4061,
+      "mean_ms": 0.4915,
+      "median_ms": 0.4678,
+      "p95_ms": 0.5764,
+      "max_ms": 1.1116,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/examples",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4221,
+      "mean_ms": 0.4597,
+      "median_ms": 0.4528,
+      "p95_ms": 0.5067,
+      "max_ms": 0.6186,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/predict/all?horizon=24",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4656,
+      "mean_ms": 0.5671,
+      "median_ms": 0.5453,
+      "p95_ms": 0.604,
+      "max_ms": 1.3183,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/predict/CAN_EH_PUERTO_DE_LA_ESTACA",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4281,
+      "mean_ms": 0.5063,
+      "median_ms": 0.4887,
+      "p95_ms": 0.584,
+      "max_ms": 1.1001,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/predict/CAN_EH_PUERTO_DE_LA_ESTACA?horizon=24",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4256,
+      "mean_ms": 0.6198,
+      "median_ms": 0.5094,
+      "p95_ms": 0.7705,
+      "max_ms": 4.0996,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/risk/CAN_EH_PUERTO_DE_LA_ESTACA",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4677,
+      "mean_ms": 0.8621,
+      "median_ms": 0.7129,
+      "p95_ms": 1.5506,
+      "max_ms": 2.2672,
+      "statuses": [
+        "200"
+      ]
+    },
+    {
+      "env": "mac_m2pro",
+      "endpoint": "/surf/CAN_EH_PUERTO_DE_LA_ESTACA",
+      "requests": 50,
+      "ok": 50,
+      "errors": 0,
+      "min_ms": 0.4089,
+      "mean_ms": 0.9441,
+      "median_ms": 0.5126,
+      "p95_ms": 2.0818,
+      "max_ms": 4.3261,
+      "statuses": [
+        "200"
+      ]
+    }
+  ]
+}

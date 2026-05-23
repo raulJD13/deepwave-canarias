@@ -1,0 +1,23 @@
+{
+  "env": "mac_m2pro",
+  "created_at": "2026-05-23T15:52:00.647799+00:00",
+  "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+  "system": "Darwin",
+  "release": "25.3.0",
+  "machine": "arm64",
+  "processor": "arm",
+  "python_version": "3.14.2",
+  "cpu_count_logical": 10,
+  "cwd": "/Users/rauljimenez/Development/Projects/AI-Projects/deep-wave-canarias",
+  "git_commit": "be9b70d",
+  "git_branch": "main",
+  "disk_usage_project": "3.6G",
+  "app_data_size": "352K",
+  "src_size": "84K",
+  "reports_size": "1.9M",
+  "pip_freeze_head": "annotated-doc==0.0.4\nannotated-types==0.7.0\nanyio==4.13.0\nappnope==0.1.4\narcosparse==0.5.1\nasttokens==3.0.1\nattrs==26.1.0\nboto3==1.43.5\nbotocore==1.43.5\ncdsapi==0.7.7\ncertifi==2026.4.22\ncharset-normalizer==3.4.7\nclick==8.3.3\ncloudpickle==3.1.2\ncomm==0.2.3\ncopernicusmarine==2.4.0\ndask==2026.3.0\ndebugpy==1.8.20\ndecorator==5.2.1\ndonfig==0.8.1.post1\necmwf-datastores-client==0.5.1\nexecuting==2.2.1\nfastapi==0.136.1\nfsspec==2026.4.0\ngoogle-crc32c==1.8.0\nh11==0.16.0\nh5netcdf==1.8.1\nh5py==3.16.0\nhttpcore==1.0.9\nhttptools==0.7.1\nhttpx==0.28.1\nidna==3.13\niniconfig==2.3.0\nipykernel==7.2.0\nipython==9.13.0\nipython_pygments_lexers==1.1.1\njedi==0.20.0\njmespath==1.1.0\njupyter_client==8.8.0\njupyter_core==5.9.1\nlocket==1.0.0\nmatplotlib-inline==0.2.2\nmultiurl==0.3.7\nnest-asyncio==1.6.0\nnumcodecs==0.16.5\nnumpy==2.4.4\npackaging==26.2\npandas==3.0.2\nparso==0.8.7\npartd==1.4.2\npath==17.1.1\npexpect==4.9.0\nplatformdirs==4.9.6\npluggy==1.6.0\nprompt_toolkit==3.0.52\npsutil==7.2.2\nptyprocess==0.7.0\npure_eval==0.2.3\npyarrow==24.0.0\npydantic==2.13.4\npydantic_core==2.46.4\nPygments==2.20.0\npystac==1.14.3\npytest==9.0.3\npython-dateutil==2.9.0.post0\npython-dotenv==1.2.2\npytz==2026.2\nPyYAML==6.0.3\npyzmq==27.1.0\nrequests==2.33.1\ns3transfer==0.17.0\nsemver==3.0.4\nsix==1.17.0\nstack-data==0.6.3\nstarlette==1.0.0\ntoolz==1.1.0\ntornado==6.5.5\ntqdm==4.67.3\ntraitlets==5.15.0\ntyping-inspection==0.4.2",
+  "ram_total_gb": 16.0,
+  "ram_available_gb": 2.78,
+  "cpu_count_physical": 10,
+  "cpu_count_logical_psutil": 10
+}
