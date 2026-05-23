@@ -1,0 +1,5 @@
+benchmark_type,env,test,requests_total,errors_total,mean_latency_ms_avg,p95_latency_ms_avg,max_latency_ms,rows_loaded,n_features,train_time_s,predict_time_s,total_time_s,mae,rmse,r2,ram_after_train_mb
+api,isardvdi,api_endpoints_mean,550,0,1.5352,2.374,12.3075,,,,,,,,,
+api,mac_m2pro,api_endpoints_mean,550,0,0.9419,1.2742,5.1146,,,,,,,,,
+training,isardvdi,lightgbm_hs_24h,,,,,,50000,80,0.7905,0.077,1.1529,0.371066,0.549953,0.550727,172.61
+training,mac_m2pro,lightgbm_hs_24h,,,,,,50000,80,1.9126,0.061,2.2148,0.371066,0.549953,0.550727,340.34
