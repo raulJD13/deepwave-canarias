@@ -1,0 +1,40 @@
+{
+    "project": "DeepWave Canarias",
+    "version": "production_artifacts_v1",
+    "created_at": "2026-05-21T10:53:24.659299+00:00",
+    "source_split": "test",
+    "description": "Artefactos ligeros para servir predicciones mar\u00edtimas, riesgo y surf score desde FastAPI y dashboard web.",
+    "data_sources": {
+        "physical_predictions": "gold/model_results/multitarget_physical/predictions_val_test_core_targets.parquet",
+        "final_results": "gold/model_results/final_report_multitarget",
+        "gold_multitarget": "gold/multitarget_training_dataset"
+    },
+    "modeling_blocks": {
+        "physical": "LightGBMRegressor por variable y horizonte",
+        "risk": "PhysicalDerivedRisk y PersistenceRisk seg\u00fan horizonte/m\u00f3dulo",
+        "surf": "PhysicalDerivedSurfScore como arquitectura final"
+    },
+    "horizons_hours": [
+        3,
+        6,
+        12,
+        24,
+        48
+    ],
+    "physical_targets_included": [
+        "hs",
+        "tp",
+        "wave_direction",
+        "wind_speed",
+        "wind_direction"
+    ],
+    "zones_count": 14,
+    "predictions_count": 70,
+    "metrics_highlights": {
+        "hs_mae_24h": 0.3159,
+        "hs_mae_48h": 0.4432,
+        "risk_general_score_24h": 0.5738,
+        "surf_score_mae_24h": 1.2768
+    },
+    "important_note": "Predicciones de demo precalculadas desde el conjunto test/validaci\u00f3n. Para producci\u00f3n real se conectar\u00eda la API al pipeline de inferencia actualizado."
+}

@@ -1,0 +1,16 @@
+{
+    "status": "ok",
+    "service": "DeepWave Canarias API",
+    "version": "0.1.0",
+    "data_loaded": true,
+    "app_data_exists": true,
+    "missing_files": [],
+    "load_errors": {},
+    "valid_horizons": [
+        3,
+        6,
+        12,
+        24,
+        48
+    ]
+}

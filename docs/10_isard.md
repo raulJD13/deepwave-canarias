@@ -273,8 +273,23 @@ E
 E           assert 1 == 0
 E            +  where 1 = CompletedProcess(args=['/usr/bin/node', '--check', '/home/isard/Desktop/project/deepwave-canarias/frontend/js/api.js']...:internal/process/esm_loader:34:13)\n    at checkSyntax (node:internal/main/check_syntax:84:21)\n\nNode.js v18.19.1\n').returncode
 
-tests/test_frontend_js_syntax.py:28: AssertionError
-================ short test summary info ================
-FAILED tests/test_frontend_js_syntax.py::test_frontend_javascript_modules_parse_with_node - AssertionError: /home/isard/Desktop/project/deepwave...
-1 failed, 31 passed in 0.58s
-(.venv) isard@isard-Standard-PC-Q35-ICH9-2009:~/Desktop/project/deepwave-canarias$ 
+(.venv) isard@isard-Standard-PC-Q35-ICH9-2009:~/Desktop/project/deepwave-canarias$ python - <<'PY'
+from pathlib import Path
+import json
+
+path = Path("frontend/package.json")
+
+if path.exists():
+    data = json.loads(path.read_text(encoding="utf-8"))
+else:
+    data = {}
+
+pytest -qh.read_text())"utf-8"), indent=2, ensure_ascii=F
+{
+  "private": true,
+  "type": "module"
+}
+
+................................                  [100%]
+32 passed in 1.09s
+(.venv) isard@isard-Standard-PC-Q35-ICH9-2009:~/Desktop/project/deepwave-canarias$
