@@ -2,7 +2,7 @@
 
 Sistema predictivo de oleaje, viento, riesgo marítimo y surf score para zonas costeras de Canarias.
 
-DeepWave Canarias transforma predicciones físicas precalculadas en información operativa para apoyar la toma de decisiones en playas, surf, navegación ligera y servicios costeros. El proyecto integra una API FastAPI, artefactos ligeros de producción en JSON, un Ocean Command Center web en 3D y despliegue local con Docker.
+DeepWave Canarias transforma predicciones físicas precalculadas en información operativa para apoyar la toma de decisiones en playas, surf, navegación ligera y servicios costeros. El proyecto integra una API FastAPI, artefactos ligeros de producción en JSON, un Ocean Command Center web con mapa satelital y despliegue local con Docker.
 
 > DeepWave Canarias es una herramienta complementaria de apoyo a la decisión marítima. No sustituye avisos oficiales marítimos, meteorológicos, de socorrismo o emergencias.
 
@@ -14,7 +14,7 @@ Componentes implementados:
 
 - API REST con FastAPI en `src/api/`.
 - Artefactos ligeros de serving en `app_data/*.json`.
-- Frontend web vanilla con Three.js en `frontend/`.
+- Frontend web vanilla con Leaflet.js en `frontend/`.
 - Tests automatizados con `pytest`.
 - Despliegue local con `Dockerfile` y `docker-compose.yml`.
 - Scripts de ejecución para API, frontend, tests y Docker.
@@ -91,7 +91,7 @@ Nota: los artefactos actuales son predicciones de demo precalculadas desde conju
 deep-wave-canarias/
 ├── app_data/                  # artefactos ligeros para serving
 ├── docs/                      # documentación técnica del proyecto
-├── frontend/                  # Ocean Command Center web vanilla + Three.js
+├── frontend/                  # Ocean Command Center web vanilla + Leaflet
 ├── notebooks/                 # pipeline histórico, modelado y reporting
 ├── reports/                   # resultados, figuras y tablas finales
 ├── scripts/                   # comandos locales de ejecución
@@ -145,12 +145,12 @@ Validaciones incluidas:
 
 ## Frontend
 
-El frontend está en `frontend/` y usa HTML, CSS, JavaScript vanilla con módulos ES y Three.js desde CDN.
+El frontend está en `frontend/` y usa HTML, CSS, JavaScript vanilla con módulos ES y Leaflet.js desde CDN.
 
 Características principales:
 
-- Escena 3D del archipiélago canario.
-- Océano animado y capas oceanográficas.
+- Mapa satelital fotorrealista de Canarias con Esri World Imagery.
+- Overlay animado de flujos marítimos y viento.
 - Marcadores de zonas monitorizadas.
 - Timeline de horizontes.
 - Panel lateral con métricas físicas, riesgo, surf score y recomendación.
@@ -303,7 +303,7 @@ Los notebooks quedan como trazabilidad del proceso de datos, entrenamiento, comp
 - Pytest.
 - Docker.
 - HTML, CSS y JavaScript vanilla.
-- Three.js.
+- Leaflet.js.
 
 ## Documentación relacionada
 

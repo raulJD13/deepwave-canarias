@@ -326,7 +326,7 @@ Work in this order unless the user says otherwise:
 5. Add robust endpoint errors for unknown zone/horizon.
 6. Add tests for the API.
 7. Build frontend dashboard with vanilla HTML/CSS/JS.
-8. Add the Three.js Ocean Command Center scene and command-panel visualizations.
+8. Add the Leaflet satellite Ocean Command Center map and command-panel visualizations.
 9. Add Docker and run scripts.
 10. Add minimal API performance checks.
 
@@ -455,16 +455,16 @@ uvicorn src.api.main:app --reload --host 127.0.0.1 --port 8000
 
 ## 9. Frontend requirements
 
-## Frontend 3D production client
+## Frontend production client
 
-The production frontend for DeepWave Canarias should be a lightweight but premium 3D web application.
+The production frontend for DeepWave Canarias should be a lightweight but premium maritime command-center web application.
 
 Use:
 
 - HTML
 - CSS
 - JavaScript vanilla ES modules
-- Three.js
+- Leaflet.js with Esri World Imagery tiles
 - No React
 - No Vue
 - No heavy frontend framework
@@ -477,25 +477,25 @@ DeepWave Canarias Ocean Command Center / Maritime Intelligence Dashboard
 
 Core experience:
 
-- animated Atlantic ocean surface
-- stylized 3D Canary Islands map with low volcanic relief
+- satellite Canary Islands map
+- animated maritime flow overlay for swell, wind and current-like motion
 - discreet coastal buoys/beacons for monitored zones
 - oceanographic overlays for swell, wind and risk
-- localized sea spray/foam around selected risk zones
+- neon risk halos around selected risk zones
 - selected-zone prediction panel
 - horizon timeline: +3h, +6h, +12h, +24h, +48h
 - compact operations header with API status, local time and mode
 - responsive command-center UI
-- graceful fallback if WebGL fails
+- graceful fallback if the map library fails to load
 
 Data mapping:
 
-- hs controls wave amplitude
-- period controls wave frequency/length
-- wind_speed controls turbulence
-- wave_direction/swell_direction controls swell bands
-- wind_direction controls wind vectors
-- risk level controls beacon color, halo intensity and localized spray/foam
+- hs controls flow overlay intensity
+- period can influence line spacing/frequency
+- wind_speed controls flow animation speed
+- wave_direction/swell_direction can control directional bands
+- wind_direction can control wind vectors
+- risk level controls beacon color and halo intensity
 - surf_score controls the surf score metric in the selected-zone panel
 
 The frontend must keep the maritime safety disclaimer visible:
@@ -504,12 +504,12 @@ DeepWave Canarias is a complementary decision-support tool and does not replace 
 
 Do not build an overcomplex game engine. Prioritize a stable, impressive MVP:
 
-1. Three.js scene starts without errors.
-2. Ocean shader animates.
-3. Stylized Canary Islands are visible.
+1. Leaflet map starts without errors.
+2. Esri satellite imagery is visible.
+3. Canary Islands are visible.
 4. Zones appear as discreet coastal beacons.
 5. Clicking a zone updates the side panel.
-6. Horizon selector updates scene and data.
+6. Horizon selector updates map and data.
 7. Oceanographic layers represent swell, wind and risk.
 8. API loading and error states are handled.
 9. The UI is usable in a live demo.
@@ -601,7 +601,7 @@ pytest
 httpx
 ```
 
-Frontend dependencies should use CDN links for Three.js ES modules. Do not introduce React, Vue, Vite or heavy frontend frameworks unless explicitly requested.
+Frontend dependencies should use CDN links for Leaflet. Do not introduce React, Vue, Vite or heavy frontend frameworks unless explicitly requested.
 
 Data/model dependencies like LightGBM, XGBoost, PyArrow and pandas are needed for notebooks, but the production API should not require all heavy ML libraries unless inference is later added.
 
@@ -802,8 +802,8 @@ frontend/js/*.js
 Use:
 
 ```text
-Three.js for the 3D ocean command center
-vanilla ES modules for state, API, UI and scene layers
+Leaflet for the satellite ocean command center map
+vanilla ES modules for state, API, UI and map layers
 FastAPI endpoints for real production data
 ```
 

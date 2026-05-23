@@ -97,7 +97,7 @@ export function initUI() {
     zoneSelect.value = current.selectedZoneId ?? "";
 
     zoneName.textContent = zone?.name ?? forecast?.zone_name ?? "Sin zona seleccionada";
-    zoneMeta.textContent = zone ? `${zone.isla ?? "Canarias"} · horizonte +${current.horizon}h` : "Selecciona una zona del oceano 3D";
+    zoneMeta.textContent = zone ? `${zone.isla ?? "Canarias"} · horizonte +${current.horizon}h` : "Selecciona una zona del mapa";
     chipHorizon.textContent = `Horizonte +${current.horizon}h`;
     chipZone.textContent = zone?.isla ? `${zone.isla} · ${zone.name}` : "Canarias";
 

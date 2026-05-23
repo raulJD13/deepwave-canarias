@@ -12,15 +12,9 @@ EXPECTED_FRONTEND_FILES = [
     "js/config.js",
     "js/api.js",
     "js/state.js",
-    "js/scene.js",
-    "js/ocean.js",
-    "js/islands.js",
-    "js/markers.js",
-    "js/particles.js",
-    "js/surfMedallion.js",
+    "js/map.js",
     "js/timeline.js",
     "js/ui.js",
-    "js/oceanLayers.js",
 ]
 
 
@@ -38,13 +32,13 @@ def test_index_html_wires_ocean_command_center_shell() -> None:
 
     required_fragments = [
         "DeepWave Canarias Ocean Command Center",
-        'id="scene-root"',
+        'id="map-root"',
         'id="api-status"',
         'id="current-time"',
         'id="zone-select"',
         'id="timeline"',
         'type="module"',
-        "three.module.js",
+        "leaflet@1.9.4",
         "Herramienta complementaria",
     ]
 
@@ -57,6 +51,7 @@ def test_frontend_api_client_targets_fastapi_contract() -> None:
     config_js = read_frontend_file("js/config.js")
 
     assert 'API_BASE_URL = "http://127.0.0.1:8000"' in config_js
+    assert "World_Imagery/MapServer/tile/{z}/{y}/{x}" in config_js
     assert "HORIZONS = [3, 6, 12, 24, 48]" in config_js
 
     for endpoint_fragment in [
@@ -71,43 +66,37 @@ def test_frontend_api_client_targets_fastapi_contract() -> None:
         assert endpoint_fragment in api_js
 
 
-def test_frontend_scene_keeps_modular_3d_layers() -> None:
-    scene_js = read_frontend_file("js/scene.js")
+def test_frontend_map_keeps_modular_leaflet_layers() -> None:
+    map_js = read_frontend_file("js/map.js")
 
-    required_imports = [
-        "OrbitControls",
-        'from "./ocean.js"',
-        'from "./islands.js"',
-        'from "./markers.js"',
-        'from "./particles.js"',
-        'from "./surfMedallion.js"',
-        'from "./oceanLayers.js"',
+    required_fragments = [
+        "L.map",
+        "L.tileLayer",
+        "ESRI_WORLD_IMAGERY_URL",
+        "createFlowLayer",
+        "createBeaconIcon",
+        "createHalo",
     ]
 
-    for fragment in required_imports:
-        assert fragment in scene_js
+    for fragment in required_fragments:
+        assert fragment in map_js
 
-    assert "export function createCommandScene" in scene_js
-
-
-def test_oceanographic_layers_are_available() -> None:
-    ocean_layers_js = read_frontend_file("js/oceanLayers.js")
-    ocean_js = read_frontend_file("js/ocean.js")
-    islands_js = read_frontend_file("js/islands.js")
-    markers_js = read_frontend_file("js/markers.js")
-
-    assert "export function createOceanLayers" in ocean_layers_js
-    assert "export function createOcean" in ocean_js
-    assert "export function createIslands" in islands_js
-    assert "export function createMarkers" in markers_js
+    assert "export function createCommandMap" in map_js
 
 
-def test_frontend_avoids_legacy_frameworks_and_map_libraries() -> None:
+def test_oceanographic_visual_classes_are_available() -> None:
+    styles = read_frontend_file("styles.css")
+
+    for class_name in [".flow-canvas", ".zone-beacon", ".risk-halo", ".risk-low", ".risk-moderate", ".risk-high"]:
+        assert class_name in styles
+
+
+def test_frontend_avoids_heavy_frameworks() -> None:
     combined_frontend = "\n".join(
         path.read_text(encoding="utf-8")
         for path in [FRONTEND / "index.html", FRONTEND / "styles.css", *sorted((FRONTEND / "js").glob("*.js"))]
     )
 
-    forbidden_fragments = ["React", "Vue", "Angular", "Vite", "Leaflet", "Chart.js"]
+    forbidden_fragments = ["React", "Vue", "Angular", "Vite", "Chart.js", "three.module.js"]
     for fragment in forbidden_fragments:
         assert fragment not in combined_frontend

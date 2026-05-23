@@ -1,6 +1,6 @@
 import { api } from "./api.js";
 import { DEFAULT_HORIZON } from "./config.js";
-import { createCommandScene } from "./scene.js";
+import { createCommandMap } from "./map.js";
 import {
   getForecastForHorizon,
   setHorizon,
@@ -12,13 +12,14 @@ import {
 import { initTimeline } from "./timeline.js";
 import { initUI } from "./ui.js";
 
-const sceneRoot = document.querySelector("#scene-root");
+const mapRoot = document.querySelector("#map-root");
 const timelineRoot = document.querySelector("#timeline");
 
-let commandScene = null;
-let suppressSceneSync = false;
-let lastSceneZones = null;
-let lastScenePredictions = null;
+let commandMap = null;
+let suppressMapSync = false;
+let lastMapZones = null;
+let lastMapPredictions = null;
+let lastFocusedKey = null;
 
 function chooseInitialZone(zones, predictions) {
   const highestRisk = [...predictions].sort(
@@ -82,37 +83,41 @@ async function refreshHorizon(horizon) {
   try {
     const predictionsForHorizon = await api.predictAll(horizon);
     setState({ predictionsForHorizon, error: null, apiOnline: true });
-    commandScene?.updatePredictions(predictionsForHorizon);
+    commandMap?.updatePredictions(predictionsForHorizon);
   } catch (error) {
     setState({ apiOnline: false, error: `No se pudo actualizar +${horizon}h: ${error.message}` });
   }
 }
 
 async function main() {
-  if (!window.WebGLRenderingContext) {
-    setState({ loading: false, error: "WebGL no esta disponible en este navegador." });
+  if (!window.L) {
+    setState({ loading: false, error: "Leaflet no esta disponible. Comprueba la conexion al CDN." });
     return;
   }
 
   initUI();
   initTimeline(timelineRoot);
 
-  commandScene = createCommandScene(sceneRoot, (zoneId) => {
+  commandMap = createCommandMap(mapRoot, (zoneId) => {
     setSelectedZone(zoneId);
   });
 
   subscribe((current) => {
-    if (!commandScene || suppressSceneSync) return;
+    if (!commandMap || suppressMapSync) return;
     if (
       current.zones.length &&
-      (current.zones !== lastSceneZones || current.predictionsForHorizon !== lastScenePredictions)
+      (current.zones !== lastMapZones || current.predictionsForHorizon !== lastMapPredictions)
     ) {
-      commandScene.setZones(current.zones, current.predictionsForHorizon);
-      lastSceneZones = current.zones;
-      lastScenePredictions = current.predictionsForHorizon;
+      commandMap.setZones(current.zones, current.predictionsForHorizon);
+      lastMapZones = current.zones;
+      lastMapPredictions = current.predictionsForHorizon;
     }
-    if (current.selectedZoneId && current.selectedForecast) {
-      commandScene.focusZone(current.selectedZoneId, current.selectedForecast);
+    const focusKey = current.selectedZoneId
+      ? `${current.selectedZoneId}:${current.selectedForecast?.horizon_hours ?? current.horizon}`
+      : null;
+    if (current.selectedZoneId && current.selectedForecast && focusKey !== lastFocusedKey) {
+      lastFocusedKey = focusKey;
+      commandMap.focusZone(current.selectedZoneId, current.selectedForecast);
     }
   });
 
@@ -120,14 +125,17 @@ async function main() {
   subscribe((current) => {
     if (current.horizon === lastHorizon) return;
     lastHorizon = current.horizon;
-    suppressSceneSync = true;
+    suppressMapSync = true;
     refreshHorizon(current.horizon).finally(() => {
       const selectedForecast = current.selectedZoneId
         ? getForecastForHorizon(current.selectedZoneId, current.horizon)
         : null;
       setState({ selectedForecast });
-      suppressSceneSync = false;
-      if (selectedForecast) commandScene?.focusZone(current.selectedZoneId, selectedForecast);
+      suppressMapSync = false;
+      if (selectedForecast) {
+        lastFocusedKey = `${current.selectedZoneId}:${selectedForecast.horizon_hours ?? current.horizon}`;
+        commandMap?.focusZone(current.selectedZoneId, selectedForecast);
+      }
     });
   });
 

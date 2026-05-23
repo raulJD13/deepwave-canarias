@@ -1,4 +1,6 @@
 export const API_BASE_URL = "http://127.0.0.1:8000";
+export const ESRI_WORLD_IMAGERY_URL =
+  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
 
 export const HORIZONS = [3, 6, 12, 24, 48];
 export const DEFAULT_HORIZON = 24;
@@ -31,6 +33,16 @@ export const ISLANDS = [
   { name: "Alegranza", lat: 29.4, lon: -13.5, radius: 1.3, scale: [0.9, 0.65], rotation: 0.2 },
 ];
 
+export const CANARY_ISLAND_LABELS = [
+  { name: "El Hierro", lat: 27.74, lng: -18.02 },
+  { name: "La Palma", lat: 28.68, lng: -17.86 },
+  { name: "La Gomera", lat: 28.1, lng: -17.24 },
+  { name: "Tenerife", lat: 28.27, lng: -16.6 },
+  { name: "Gran Canaria", lat: 28.08, lng: -15.55 },
+  { name: "Fuerteventura", lat: 28.36, lng: -14.05 },
+  { name: "Lanzarote", lat: 29.05, lng: -13.62 },
+];
+
 export const MAP_BOUNDS = {
   minLat: 27.45,
   maxLat: 29.55,
@@ -48,7 +60,11 @@ export function colorForRisk(label) {
   return RISK_COLORS[label] ?? RISK_COLORS.unknown;
 }
 
+export function riskClassName(label) {
+  const normalized = label && RISK_COLORS[label] ? label : "unknown";
+  return `risk-${normalized}`;
+}
+
 export function colorForSurf(quality) {
   return SURF_COLORS[quality] ?? SURF_COLORS.unknown;
 }
-
