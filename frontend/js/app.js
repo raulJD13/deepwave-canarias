@@ -1,6 +1,7 @@
 import { api } from "./api.js";
 import { DEFAULT_HORIZON } from "./config.js";
 import { createCommandMap } from "./map.js";
+import { initAnalytics } from "./analytics.js";
 import {
   getForecastForHorizon,
   setHorizon,
@@ -9,11 +10,12 @@ import {
   state,
   subscribe,
 } from "./state.js";
-import { initTimeline } from "./timeline.js";
+import { initTimeline, initTimelinePlayer } from "./timeline.js";
 import { initUI } from "./ui.js";
 
 const mapRoot = document.querySelector("#map-root");
 const timelineRoot = document.querySelector("#timeline");
+const horizonControlRoot = document.querySelector("#horizon-control");
 
 let commandMap = null;
 let suppressMapSync = false;
@@ -61,6 +63,7 @@ async function loadAppData(horizon = DEFAULT_HORIZON) {
       loading: false,
       error: null,
       horizon,
+      selectedHorizon: horizon,
       zones,
       predictionsForHorizon,
       forecastsByZone,
@@ -90,17 +93,20 @@ async function refreshHorizon(horizon) {
 }
 
 async function main() {
-  if (!window.L) {
-    setState({ loading: false, error: "Leaflet no esta disponible. Comprueba la conexion al CDN." });
-    return;
-  }
-
+  window.__deepwaveBoot = "main-started";
   initUI();
   initTimeline(timelineRoot);
+  initTimeline(horizonControlRoot);
+  initTimelinePlayer();
+  initAnalytics();
 
-  commandMap = createCommandMap(mapRoot, (zoneId) => {
-    setSelectedZone(zoneId);
-  });
+  if (window.L) {
+    commandMap = createCommandMap(mapRoot, (zoneId) => {
+      setSelectedZone(zoneId);
+    });
+  } else {
+    setState({ error: "Leaflet no esta disponible. El panel predictivo seguira funcionando sin mapa." });
+  }
 
   subscribe((current) => {
     if (!commandMap || suppressMapSync) return;
@@ -112,8 +118,9 @@ async function main() {
       lastMapZones = current.zones;
       lastMapPredictions = current.predictionsForHorizon;
     }
+    commandMap?.setLayer(current.activeLayer);
     const focusKey = current.selectedZoneId
-      ? `${current.selectedZoneId}:${current.selectedForecast?.horizon_hours ?? current.horizon}`
+      ? `${current.selectedZoneId}:${current.selectedForecast?.horizon_hours ?? current.selectedHorizon}`
       : null;
     if (current.selectedZoneId && current.selectedForecast && focusKey !== lastFocusedKey) {
       lastFocusedKey = focusKey;
@@ -123,17 +130,17 @@ async function main() {
 
   let lastHorizon = state.horizon;
   subscribe((current) => {
-    if (current.horizon === lastHorizon) return;
-    lastHorizon = current.horizon;
+    if (current.selectedHorizon === lastHorizon) return;
+    lastHorizon = current.selectedHorizon;
     suppressMapSync = true;
-    refreshHorizon(current.horizon).finally(() => {
+    refreshHorizon(current.selectedHorizon).finally(() => {
       const selectedForecast = current.selectedZoneId
-        ? getForecastForHorizon(current.selectedZoneId, current.horizon)
+        ? getForecastForHorizon(current.selectedZoneId, current.selectedHorizon)
         : null;
       setState({ selectedForecast });
       suppressMapSync = false;
       if (selectedForecast) {
-        lastFocusedKey = `${current.selectedZoneId}:${selectedForecast.horizon_hours ?? current.horizon}`;
+        lastFocusedKey = `${current.selectedZoneId}:${selectedForecast.horizon_hours ?? current.selectedHorizon}`;
         commandMap?.focusZone(current.selectedZoneId, selectedForecast);
       }
     });
@@ -143,4 +150,12 @@ async function main() {
   if (state.selectedZoneId) setHorizon(state.horizon);
 }
 
-main();
+main().catch((error) => {
+  console.error(error);
+  window.__deepwaveBoot = `main-error: ${error.message}`;
+  setState({
+    loading: false,
+    apiOnline: false,
+    error: `Error inicializando DeepWave: ${error.message}`,
+  });
+});

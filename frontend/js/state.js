@@ -7,6 +7,12 @@ export const state = {
   loading: true,
   error: null,
   horizon: DEFAULT_HORIZON,
+  selectedHorizon: DEFAULT_HORIZON,
+  activeLayer: "wave",
+  selectedLayer: "wave",
+  selectedProfile: "operational",
+  islandFilter: "all",
+  searchQuery: "",
   zones: [],
   forecastsByZone: new Map(),
   predictionsForHorizon: [],
@@ -35,12 +41,23 @@ export function getForecastForHorizon(zoneId, horizon = state.horizon) {
 }
 
 export function setSelectedZone(zoneId) {
-  const selectedForecast = getForecastForHorizon(zoneId);
+  const selectedForecast = getForecastForHorizon(zoneId, state.selectedHorizon);
   setState({ selectedZoneId: zoneId, selectedForecast });
 }
 
 export function setHorizon(horizon) {
   const selectedForecast = state.selectedZoneId ? getForecastForHorizon(state.selectedZoneId, horizon) : null;
-  setState({ horizon, selectedForecast });
+  setState({ horizon, selectedHorizon: horizon, selectedForecast });
 }
 
+export function setActiveLayer(activeLayer) {
+  setState({ activeLayer, selectedLayer: activeLayer });
+}
+
+export function setIslandFilter(islandFilter) {
+  setState({ islandFilter });
+}
+
+export function setSearchQuery(searchQuery) {
+  setState({ searchQuery });
+}

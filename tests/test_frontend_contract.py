@@ -12,6 +12,8 @@ EXPECTED_FRONTEND_FILES = [
     "js/config.js",
     "js/api.js",
     "js/state.js",
+    "js/analytics.js",
+    "js/charts.js",
     "js/map.js",
     "js/timeline.js",
     "js/ui.js",
@@ -39,6 +41,10 @@ def test_index_html_wires_ocean_command_center_shell() -> None:
         'id="timeline"',
         'type="module"',
         "leaflet@1.9.4",
+        "chart.js",
+        "chartjs-plugin-annotation",
+        'id="btn-play-timeline"',
+        'id="ai-latency"',
         "Herramienta complementaria",
     ]
 
@@ -97,6 +103,6 @@ def test_frontend_avoids_heavy_frameworks() -> None:
         for path in [FRONTEND / "index.html", FRONTEND / "styles.css", *sorted((FRONTEND / "js").glob("*.js"))]
     )
 
-    forbidden_fragments = ["React", "Vue", "Angular", "Vite", "Chart.js", "three.module.js"]
+    forbidden_fragments = ["React", "Vue", "Angular", "Vite", "three.module.js"]
     for fragment in forbidden_fragments:
         assert fragment not in combined_frontend

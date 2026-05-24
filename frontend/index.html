@@ -10,11 +10,14 @@
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       crossorigin=""
     />
-    <link rel="stylesheet" href="./styles.css?v=leaflet-focus-fix-20260523" />
+    <link rel="stylesheet" href="./styles.css?v=ai-predictive-features-20260523" />
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       crossorigin=""
+      async
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js" async></script>
   </head>
   <body>
     <main id="app" class="app-shell is-loading">
@@ -39,6 +42,10 @@
             <span>Modo</span>
             <strong>Forecast demo</strong>
           </div>
+          <div class="ops-mode">
+            <span>Actualizado</span>
+            <strong id="last-update">--</strong>
+          </div>
           <div class="status-pill" id="api-status">
             <span class="status-dot"></span>
             <span id="api-status-label">Conectando API</span>
@@ -47,12 +54,39 @@
       </header>
 
       <section class="control-panel" aria-label="Capas oceanograficas activas">
-        <p class="eyebrow">Capas activas</p>
+        <p class="eyebrow">Control predictivo</p>
         <div class="layer-status">FastAPI 8000</div>
-        <div class="layer-list">
-          <span><i class="layer-dot wave"></i> Oleaje / swell</span>
-          <span><i class="layer-dot wind"></i> Viento</span>
-          <span><i class="layer-dot risk"></i> Riesgo costero</span>
+        <div class="ai-telemetry" aria-label="Telemetria de inferencia IA">
+          <div><span>Motor</span><strong id="ai-engine">LightGBM v1.2</strong></div>
+          <div><span>Inferencia</span><strong id="ai-latency">-- ms</strong></div>
+          <div><span>Ultima inferencia</span><strong id="ai-last-inference">--</strong></div>
+        </div>
+        <label class="control-field">
+          <span>Capa</span>
+          <select id="layer-select">
+            <option value="wave">Oleaje</option>
+            <option value="wind">Viento</option>
+            <option value="risk_beach">Riesgo playa</option>
+            <option value="risk_navigation">Riesgo navegacion</option>
+            <option value="surf">Surf score</option>
+          </select>
+        </label>
+        <label class="control-field">
+          <span>Isla</span>
+          <select id="island-filter"></select>
+        </label>
+        <label class="control-field">
+          <span>Buscar zona</span>
+          <input id="zone-search" type="search" placeholder="Ej. El Callao" />
+        </label>
+        <div class="mini-horizon">
+          <span>Horizonte global</span>
+          <div id="horizon-control" class="mini-timeline"></div>
+        </div>
+        <div class="ranking-box">
+          <p class="eyebrow">Ranking rapido</p>
+          <strong id="ranking-title" class="ranking-title">Top oleaje +24h</strong>
+          <div id="ranking-list" class="ranking-list"></div>
         </div>
       </section>
 
@@ -89,7 +123,10 @@
         <div class="risk-stack">
           <div class="risk-row">
             <span>Riesgo general</span>
-            <strong id="risk-general">--</strong>
+            <div class="risk-value">
+              <strong id="risk-general">--</strong>
+              <small id="risk-general-trend">--</small>
+            </div>
           </div>
           <div class="risk-row">
             <span>Riesgo playa</span>
@@ -103,7 +140,17 @@
 
         <div class="recommendation-box">
           <p class="eyebrow">Recomendacion operativa</p>
-          <p id="recommendation">Cargando recomendacion prevista.</p>
+          <div id="recommendation" class="structured-recommendation">
+            <article><strong>Baño</strong><span>Esperando prediccion.</span></article>
+            <article><strong>Navegacion</strong><span>Esperando prediccion.</span></article>
+            <article><strong>Surf</strong><span>Esperando prediccion.</span></article>
+            <p>DeepWave Canarias es una herramienta complementaria y no sustituye avisos oficiales.</p>
+          </div>
+        </div>
+
+        <div class="recommendation-box">
+          <p class="eyebrow">Por que esta prediccion</p>
+          <ul id="why-list" class="why-list"></ul>
         </div>
 
         <div class="legend-block">
@@ -117,7 +164,40 @@
         </div>
       </aside>
 
+      <section class="insight-dock" aria-label="Analitica predictiva">
+        <div class="dock-header">
+          <div>
+            <p class="eyebrow">Evolucion prevista proximas 48 horas</p>
+            <h2 id="evolution-title">Prediccion temporal</h2>
+          </div>
+          <div class="dock-summary" id="dock-summary">Selecciona una zona para analizar la evolucion.</div>
+        </div>
+        <div id="forecast-evolution" class="forecast-evolution"></div>
+        <div class="analytics-grid">
+          <div class="chart-panel">
+            <div id="chart-tabs" class="chart-tabs">
+              <button type="button" class="chart-tab is-active" data-chart="wave">Oleaje</button>
+              <button type="button" class="chart-tab" data-chart="wind">Viento</button>
+              <button type="button" class="chart-tab" data-chart="risk">Riesgo</button>
+              <button type="button" class="chart-tab" data-chart="surf">Surf</button>
+              <button type="button" class="chart-tab" data-chart="compare">Comparativa</button>
+              <button type="button" class="chart-tab" data-chart="model">Modelo/API</button>
+            </div>
+            <div class="chart-frame">
+              <canvas id="forecast-chart" aria-label="Grafica predictiva"></canvas>
+              <div id="chart-empty" class="chart-empty" hidden></div>
+              <div id="model-panel" class="model-panel" hidden></div>
+            </div>
+          </div>
+          <div class="compare-panel">
+            <p class="eyebrow">Comparador de zonas</p>
+            <div id="comparison-table" class="comparison-table"></div>
+          </div>
+        </div>
+      </section>
+
       <nav class="timeline-shell" aria-label="Selector de horizonte">
+        <button id="btn-play-timeline" class="play-timeline" type="button" aria-pressed="false">Play</button>
         <div id="timeline" class="timeline"></div>
       </nav>
 
@@ -137,6 +217,6 @@
       </footer>
     </main>
 
-    <script type="module" src="./js/app.js?v=leaflet-focus-fix-20260523"></script>
+    <script type="module" src="./js/app.js?v=ai-predictive-features-20260523"></script>
   </body>
 </html>

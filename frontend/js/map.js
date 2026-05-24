@@ -35,7 +35,34 @@ function predictionForZone(predictions, zoneId) {
   return predictions.find((prediction) => prediction.zona_id === zoneId) ?? null;
 }
 
-function forecastRiskLabel(forecast) {
+function colorForLayer(forecast, layer) {
+  const physical = forecast?.physical ?? {};
+  if (layer === "wave") {
+    const hs = Number(physical.hs ?? forecast?.hs ?? 0);
+    if (hs >= 2.5) return "#e67e22";
+    if (hs >= 1.6) return "#f1c40f";
+    return "#67e8f9";
+  }
+  if (layer === "wind") {
+    const wind = Number(physical.wind_speed ?? forecast?.wind_speed ?? 0);
+    if (wind >= 10) return "#e67e22";
+    if (wind >= 6) return "#f1c40f";
+    return "#38bdf8";
+  }
+  if (layer === "surf") {
+    const score = Number(forecast?.surf?.score ?? 0);
+    if (score >= 8) return "#9b59b6";
+    if (score >= 6) return "#2ecc71";
+    if (score >= 4) return "#f1c40f";
+    return "#95a5a6";
+  }
+  const risk = layer === "risk_navigation" ? forecast?.risk_navigation?.label : forecast?.risk_beach?.label;
+  return colorForRisk(risk ?? forecast?.risk_general?.label ?? "unknown");
+}
+
+function forecastRiskLabel(forecast, layer) {
+  if (layer === "risk_beach") return forecast?.risk_beach?.label ?? forecast?.risk_general?.label ?? "unknown";
+  if (layer === "risk_navigation") return forecast?.risk_navigation?.label ?? forecast?.risk_general?.label ?? "unknown";
   return forecast?.risk_general?.label ?? "unknown";
 }
 
@@ -48,12 +75,13 @@ function riskClassName(label) {
   return `risk-${normalized}`;
 }
 
-function createBeaconIcon(forecast, selected = false) {
-  const risk = forecastRiskLabel(forecast);
+function createBeaconIcon(forecast, selected = false, layer = "wave") {
+  const risk = forecastRiskLabel(forecast, layer);
+  const color = colorForLayer(forecast, layer);
   const className = ["zone-beacon", riskClassName(risk), selected ? "is-selected" : ""].filter(Boolean).join(" ");
   return L.divIcon({
     className: "",
-    html: `<span class="${className}" aria-hidden="true"></span>`,
+    html: `<span class="${className}" style="color:${color}" aria-hidden="true"></span>`,
     iconSize: [30, 30],
     iconAnchor: [15, 15],
   });
@@ -68,14 +96,15 @@ function createLabelIcon(label, className = "zone-label") {
   });
 }
 
-function createHalo(latLng, forecast, selected = false) {
-  const risk = forecastRiskLabel(forecast);
+function createHalo(latLng, forecast, selected = false, layer = "wave") {
+  const risk = forecastRiskLabel(forecast, layer);
+  const color = colorForLayer(forecast, layer);
   return L.circleMarker(latLng, {
     radius: selected ? 24 : 16,
     pane: "riskPane",
     className: `risk-halo ${riskClassName(risk)} ${selected ? "is-selected" : ""}`,
-    color: colorForRisk(risk),
-    fillColor: colorForRisk(risk),
+    color,
+    fillColor: color,
     fillOpacity: selected ? 0.18 : 0.1,
     opacity: selected ? 0.72 : 0.42,
     weight: selected ? 2 : 1,
@@ -210,6 +239,7 @@ export function createCommandMap(root, onZoneSelect) {
   let predictionsCache = [];
   let selectedZoneId = null;
   let didFitInitialBounds = false;
+  let activeLayer = "wave";
 
   CANARY_ISLAND_LABELS.forEach((island) => {
     L.marker([island.lat, island.lng], {
@@ -238,13 +268,17 @@ export function createCommandMap(root, onZoneSelect) {
       const forecast = predictionForZone(predictionsCache, zone.zona_id);
       const isSelected = zone.zona_id === selectedZoneId;
       const marker = L.marker(latLng, {
-        icon: createBeaconIcon(forecast, isSelected),
+        icon: createBeaconIcon(forecast, isSelected, activeLayer),
         title: zone.name ?? zone.zona_id,
       }).addTo(markerLayer);
       marker.on("click", () => onZoneSelect(zone.zona_id));
+      marker.bindTooltip(
+        `<strong>${zone.name ?? zone.zona_id}</strong><br>+${forecast?.horizon_hours ?? ""}h · hs ${forecast?.physical?.hs ?? forecast?.hs ?? "--"} m · surf ${forecast?.surf?.score ?? "--"}/10`,
+        { direction: "top", opacity: 0.92 },
+      );
       markerMap.set(zone.zona_id, marker);
 
-      const halo = createHalo(latLng, forecast, isSelected).addTo(haloLayer);
+      const halo = createHalo(latLng, forecast, isSelected, activeLayer).addTo(haloLayer);
       haloMap.set(zone.zona_id, halo);
 
       L.marker([latLng[0] + 0.035, latLng[1] + 0.035], {
@@ -270,6 +304,12 @@ export function createCommandMap(root, onZoneSelect) {
     renderMarkers();
   }
 
+  function setLayer(layer) {
+    if (activeLayer === layer) return;
+    activeLayer = layer;
+    renderMarkers();
+  }
+
   function focusZone(zoneId, forecast) {
     selectedZoneId = zoneId;
     flowLayer.update(forecast);
@@ -290,5 +330,5 @@ export function createCommandMap(root, onZoneSelect) {
     map.remove();
   }
 
-  return { setZones, updatePredictions, focusZone, dispose, get selectedZoneId() { return selectedZoneId; } };
+  return { setZones, updatePredictions, setLayer, focusZone, dispose, get selectedZoneId() { return selectedZoneId; } };
 }

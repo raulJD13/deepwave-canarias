@@ -2,7 +2,7 @@
 
 ## Goal
 
-Build a premium lightweight frontend for DeepWave Canarias using HTML, CSS, vanilla JavaScript ES modules and Leaflet.js.
+Build a premium lightweight frontend for DeepWave Canarias using HTML, CSS, vanilla JavaScript ES modules, Leaflet.js and Chart.js.
 
 The frontend must visualize maritime predictions served by the FastAPI backend and feel like a professional maritime intelligence dashboard, closer to Copernicus Marine, Windy or NOAA-style operational monitoring than to a game scene.
 
@@ -20,6 +20,7 @@ frontend/
     ├── api.js
     ├── state.js
     ├── map.js
+    ├── analytics.js
     ├── timeline.js
     └── ui.js
 ```
@@ -59,6 +60,9 @@ Main components:
 - Discreet coastal beacons for monitored zones.
 - Neon risk halos around selected or relevant zones.
 - Right-side command panel with selected-zone forecast values.
+- Forecast evolution cards for +3h, +6h, +12h, +24h and +48h.
+- Chart tabs for wave, wind, risk, surf, comparison and model status.
+- Operational rankings for safest zones, best surf, highest risk and navigation risk.
 - Bottom horizon timeline: +3h, +6h, +12h, +24h and +48h.
 - Safety disclaimer.
 - Loading and API error states.

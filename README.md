@@ -14,7 +14,7 @@ Componentes implementados:
 
 - API REST con FastAPI en `src/api/`.
 - Artefactos ligeros de serving en `app_data/*.json`.
-- Frontend web vanilla con Leaflet.js en `frontend/`.
+- Frontend web vanilla con Leaflet.js y Chart.js en `frontend/`.
 - Tests automatizados con `pytest`.
 - Despliegue local con `Dockerfile` y `docker-compose.yml`.
 - Scripts de ejecución para API, frontend, tests y Docker.
@@ -91,7 +91,7 @@ Nota: los artefactos actuales son predicciones de demo precalculadas desde conju
 deep-wave-canarias/
 ├── app_data/                  # artefactos ligeros para serving
 ├── docs/                      # documentación técnica del proyecto
-├── frontend/                  # Ocean Command Center web vanilla + Leaflet
+├── frontend/                  # Ocean Command Center web vanilla + Leaflet + Chart.js
 ├── notebooks/                 # pipeline histórico, modelado y reporting
 ├── reports/                   # resultados, figuras y tablas finales
 ├── scripts/                   # comandos locales de ejecución
@@ -145,7 +145,7 @@ Validaciones incluidas:
 
 ## Frontend
 
-El frontend está en `frontend/` y usa HTML, CSS, JavaScript vanilla con módulos ES y Leaflet.js desde CDN.
+El frontend está en `frontend/` y usa HTML, CSS, JavaScript vanilla con módulos ES, Leaflet.js y Chart.js desde CDN.
 
 Características principales:
 
@@ -153,6 +153,9 @@ Características principales:
 - Overlay animado de flujos marítimos y viento.
 - Marcadores de zonas monitorizadas.
 - Timeline de horizontes.
+- Evolución temporal a +3h, +6h, +12h, +24h y +48h.
+- Gráficas de oleaje, viento, riesgo, surf y comparativa.
+- Ranking operativo por seguridad, surf y riesgo.
 - Panel lateral con métricas físicas, riesgo, surf score y recomendación.
 - Estado de conexión con la API.
 - Diseño responsive de estilo centro de control marítimo.
@@ -304,6 +307,7 @@ Los notebooks quedan como trazabilidad del proceso de datos, entrenamiento, comp
 - Docker.
 - HTML, CSS y JavaScript vanilla.
 - Leaflet.js.
+- Chart.js.
 
 ## Documentación relacionada
 

@@ -59,6 +59,6 @@ def test_frontend_documentation_matches_ocean_command_center_direction() -> None
 
     assert "Ocean Command Center" in combined_docs
 
-    stale_fragments = ["3D Command Center", "Three.js", "Chart.js", "torus"]
+    stale_fragments = ["3D Command Center", "Three.js", "torus"]
     for fragment in stale_fragments:
         assert fragment not in combined_docs
