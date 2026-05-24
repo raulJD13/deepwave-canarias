@@ -784,26 +784,67 @@ h2 {
 
 .model-panel {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
+  max-height: 260px;
+  overflow: auto;
+  padding-right: 4px;
 }
 
-.model-panel div {
+.model-panel .model-metric {
   display: grid;
   gap: 4px;
   padding: 9px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.model-panel .model-metric.is-system {
+  background: linear-gradient(135deg, rgba(103, 232, 249, 0.13), rgba(14, 165, 233, 0.06));
+  border-color: rgba(103, 232, 249, 0.22);
+}
+
+.model-panel .model-metric.is-highlight {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.2);
+}
+
+.model-panel .model-metric.is-risk {
+  background: rgba(245, 158, 11, 0.09);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.model-panel .model-metric.is-surf {
+  background: rgba(34, 197, 94, 0.08);
+  border-color: rgba(34, 197, 94, 0.18);
+}
+
+.model-panel .model-metric.is-api {
+  background: rgba(129, 140, 248, 0.09);
+  border-color: rgba(129, 140, 248, 0.2);
+}
+
+.model-panel .model-metric.is-muted {
+  opacity: 0.72;
 }
 
 .model-panel span {
   color: var(--muted);
   font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .model-panel strong {
   color: #f2fbff;
   font-size: 0.9rem;
+}
+
+.model-panel small {
+  color: rgba(214, 230, 238, 0.62);
+  font-size: 0.68rem;
+  line-height: 1.25;
 }
 
 .compare-panel {
@@ -1164,6 +1205,11 @@ h2 {
 
   .chart-frame {
     height: 260px;
+  }
+
+  .model-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: 360px;
   }
 
   .command-panel {

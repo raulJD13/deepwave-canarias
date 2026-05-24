@@ -97,6 +97,26 @@ def test_oceanographic_visual_classes_are_available() -> None:
         assert class_name in styles
 
 
+def test_frontend_model_api_tab_exposes_validation_metrics() -> None:
+    analytics_js = read_frontend_file("js/analytics.js")
+
+    required_metrics = [
+        "MAE hs +24h",
+        "RMSE hs +24h",
+        "MAE hs +48h",
+        "RMSE hs +48h",
+        "F1 riesgo general +24h",
+        "Recall riesgo alto +24h",
+        "MAE surf +24h",
+        "RMSE surf +24h",
+        "API media local",
+        "API p95 servidor",
+    ]
+
+    for metric in required_metrics:
+        assert metric in analytics_js
+
+
 def test_frontend_avoids_heavy_frameworks() -> None:
     combined_frontend = "\n".join(
         path.read_text(encoding="utf-8")
